@@ -1,0 +1,57 @@
+.appBody{
+    width: 100%;    
+}
+
+.appBody h2{
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 20px;
+    width: 300px;
+    height: auto;
+}
+
+.presentacion{
+    display: flex; 
+    margin-top: 60px;
+    align-items: center;
+    padding: 20px;
+}
+
+.presentacion img{
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 20px;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px black;
+
+}
+.presentacion p{
+    margin-left: 30px;
+    margin-right: 10px;
+    font-size: 20px;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    
+}
+
+.buttonleer1{
+    height: 60px;
+    width: 150px;
+    background-color: #ec1f6e;
+    border: none;
+    border-radius: 15px;
+    color: #fbfaf7;
+    cursor: pointer;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 10px 40px;
+}
+
+.buttonleer1:hover{
+    transform: scale(1.1); /* Aumenta el tamaño del botón al 110% */
+    box-shadow: 0px 5px 5px #B11752;
+}

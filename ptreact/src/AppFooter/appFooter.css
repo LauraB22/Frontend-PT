@@ -1,0 +1,25 @@
+.appfooter {
+    background-color: #e3e3e3;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;  /* Alinea los elementos a los extremos */
+    align-items: center;             /* Centra los elementos verticalmente */
+    padding: 30px 20px;              /* Espacio alrededor del contenido dentro del footer */
+    box-sizing: border-box;          /* Incluye el padding en el cálculo del ancho */
+    bottom: 0;                       /* Opcional: alinea el footer al borde inferior de la página */
+    left: 0; 
+    margin-top: 20px;
+
+  }
+
+  .appfooter img{
+    height: 80px;                     /* Altura fija para las imágenes, ajusta según necesidad */
+    padding: 10px; 
+  }
+
+  .appfooter p{
+    text-align: center;
+    align-items: center;
+  }
+
