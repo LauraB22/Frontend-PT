@@ -30,20 +30,20 @@
 .buttonexaminar {    
     display: block;
     width: 150px;
-    height: 60px;
+    height: 30px;
     font-family: 'Muli', sans-serif;
     font-size: 16px;
     font-weight: bold;
-    margin: 0 auto 16px;
+    margin: 10px 40px;
     padding: 10px;
     border: none;
     border-radius: 15px;
     background: #ec1f6e; 
     color: #fbfaf7;
     cursor: pointer;
+    text-align: center;
+    
 }
-
-
 
 .buttonexaminar:hover{
     transform: scale(1.1); /* Aumenta el tamaño del botón al 110% */

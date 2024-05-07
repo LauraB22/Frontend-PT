@@ -1,10 +1,12 @@
 import subir from "../images/subir.png";
 import './uploadMedia.css'
+import React, { useState, useEffect } from "react";
 
 
 function UploadMedia() {
   const [data, setData] = useState("");
   const [file, setFile] = useState(null);
+  const [fileName, setFileName] = useState('');
 
   useEffect(() => {
     if (file !== null) {
@@ -14,6 +16,7 @@ function UploadMedia() {
 
   const onFileChange = (event) => {
      setFile(event.target.files[0]);
+     setFileName(event.target.files[0].name);
   };
 
    const fetchData = async () => {
@@ -40,7 +43,13 @@ function UploadMedia() {
         <h1>¿Tienes sospecha de que el correo electrónico es phishing?</h1>
         <h3>Sube tus correos a analizar en el formato .mbox</h3>
         <img src={subir} alt="" />
-        <input type="file" onChange={onFileChange} />
+        <input type="file" 
+                id="file-input"
+                style={{ display: 'none' }}
+                onChange={onFileChange} />
+        <label htmlFor="file-input" className="buttonexaminar">
+          {fileName || 'Subir Archivo'}
+        </label>
         <p>{data}</p> 
         <p> O arrastra archivos aquí</p>
     </div>
