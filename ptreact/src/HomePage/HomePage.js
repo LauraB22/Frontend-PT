@@ -11,8 +11,8 @@ function HomePage() {
   return (
     <>  
         {/*<AppHeader />*/}
-        <AppItem/>
-        <AppBody />
+          <AppItem/>
+          <AppBody />
         {/*<AppFooter />*/}
       
     </>

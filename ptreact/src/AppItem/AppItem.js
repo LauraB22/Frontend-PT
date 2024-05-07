@@ -2,8 +2,8 @@ import correo from "../images/correopesca.jpg";
 import pesca from "../images/pesca.png";
 import personCandado from "../images/que-es-phishing-pharming.jpg";
 import "./appItem.css";
-
-import { useNavigate } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import { UploadMedia } from "../SubirArchivos/UploadMedia.js";
 
 
 function AppItem(props) {
@@ -26,10 +26,13 @@ function AppItem(props) {
 
       <span className="appContainer">
         <p>Conoce más sobre como utilizar esta herramienta</p>
-          <button
-            className="leemas2">
-            Usa Phishmail
-          </button>
+          <Link to="UploadMedia" className="linkdecor">
+            <button
+              className="leemas2">
+              Usa Phishmail
+            </button>
+          </Link>
+          
       </span>
     </div>
   );
