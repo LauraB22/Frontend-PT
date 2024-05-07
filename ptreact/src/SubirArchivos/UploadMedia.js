@@ -1,4 +1,3 @@
-
 import subir from "../images/subir.png";
 import './uploadMedia.css'
 

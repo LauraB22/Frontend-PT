@@ -5,6 +5,7 @@ import { HomePage } from "./HomePage/HomePage.js";
 import { UploadMedia } from "./SubirArchivos/UploadMedia.js";
 import { AppHeader } from "./AppHeader/AppHeader.js";
 import { AppFooter } from "./AppFooter/AppFooter.js";
+import {Tutorial} from "./Tutorial/Tutorial.js";
 import {
   BrowserRouter as Router,
   Routes,
@@ -27,6 +28,12 @@ function App() {
             <UploadMedia/>
           </div>}
           />
+
+          <Route exact path="/como_usar_phishmail" element={<div>
+            <Tutorial/>
+          </div>
+
+          }/>
       
         </Routes>
       </>
