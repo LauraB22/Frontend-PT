@@ -22,15 +22,16 @@ function Results() {
       <table>
         <thead>
             <tr>
-                <th>Asunto del correo electrónico</th>
+                <th>Dirección de correo electrónico del remitente </th>
                 <th>Resultado</th>
             </tr>
         </thead>
         <tbody>
             {Object.entries(emails).map(([key,value]) => (
-                <tr key={key}>
-                    <td>{value["Sender Address"]}</td>
-                    <td>{value.result == 1 ? 'Correo seguro' : 'Posible phishing'}</td>
+                <tr key={key} 
+                  className={value.Results == 1 ? 'phishing' : 'secure'}>
+                  <td>{value["Sender Address"]}</td>
+                  <td>{value.Results == 1 ? 'Posible phishing' : 'Correo seguro'}</td>
                 </tr>
             ))}
         </tbody>

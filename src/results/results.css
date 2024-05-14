@@ -21,3 +21,10 @@ table {
     background-color: #f9f9f9;
   }
   
+  .phishing{
+    color: red;
+  }
+
+  .secure {
+    color: green;
+  }
