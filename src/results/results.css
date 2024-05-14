@@ -1,14 +1,19 @@
+.table-responsive {
+  display: flex;
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente dentro del contenedor */
+  align-items: center; /* Centra los elementos verticalmente dentro del contenedor */
+  min-height: 100vh;
+}
+
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-left: 40px;
-    margin-left: 40px;
-    text-align: center;
-    justify-content: center;
-  }
+  width: 80%; /* O cualquier ancho que prefieras */
+  margin: auto; /* Importante para centrar la tabla si no estás usando flexbox en el contenedor */
+  border-collapse: collapse;
+}
   
   th, td {
-    padding: 8px;
+    padding: 10px;
     text-align: left;
     border-bottom: 1px solid #ddd;
   }

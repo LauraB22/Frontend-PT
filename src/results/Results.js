@@ -17,7 +17,7 @@ function Results() {
     }
 
   return (
-    <div>
+    <div className="tablaResponsive">
       <h3>Resultados del Análisis</h3>
       <table>
         <thead>

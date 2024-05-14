@@ -26,7 +26,7 @@ function UploadMedia() {
        const formData = new FormData();
        formData.append("mbox_file", file);
        const response = await fetch(
-         "http://phishing-prediction.us-east-2.elasticbeanstalk.com/upload-mbox",
+         "http://api.phishing-predict.xyz/upload-mbox",
          {
            method: "POST",
            body: formData,
