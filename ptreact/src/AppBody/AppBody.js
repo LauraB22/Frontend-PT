@@ -8,17 +8,17 @@ function AppBody() {
   return (
     <div className="appBody">
       <span className="presentacion">
-        <p>
+         
           Phishmail es la herramienta que te ayudará a identificar los correos
           electrónicos que son un intento de estafa
-        </p>
-        <img src={phish} alt="" />
-      </span>
-      <Link to="Tutorial">
+        
+        <Link to="Tutorial">
         <button className="buttonleer1">
           Leer más
         </button>
-      </Link>s
+      </Link>
+      </span>
+      
     </div>
   );
 }
