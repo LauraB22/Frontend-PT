@@ -7,6 +7,7 @@ import { AppHeader } from "./AppHeader/AppHeader.js";
 import { AppFooter } from "./AppFooter/AppFooter.js";
 import {Tutorial} from "./Tutorial/Tutorial.js";
 import {Results} from "./results/Results.js";
+import { LoadingPage } from "./LoadingPage/LoadingPage.js";
 import {
   BrowserRouter as Router,
   Routes,
@@ -41,8 +42,13 @@ function App() {
             <Tutorial/>
             <AppFooter/>  
           </div>
-
           }/>
+
+          <Route exact path="/loading" element={<div>
+            <LoadingPage/>
+          </div>
+          }/>
+
         </Routes>
       </>
     </Router>

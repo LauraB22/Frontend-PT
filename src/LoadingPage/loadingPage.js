@@ -1,5 +1,7 @@
 import React from "react";
-function loadingPage(){
+import "./loadingPage.css"; 
+
+function LoadingPage(){
     return(
         <div className="loading-container">
             <div className="loading-spinner"></div>
@@ -8,4 +10,4 @@ function loadingPage(){
     );
 }
 
-export {loadingPage};
+export {LoadingPage};

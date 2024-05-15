@@ -3,7 +3,6 @@ import './uploadMedia.css'
 import React, { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 
-
 function UploadMedia() {
   const [data, setData] = useState("");
   const [file, setFile] = useState(null);
@@ -16,10 +15,16 @@ function UploadMedia() {
      }
    }, [file]);
 
-  const onFileChange = (event) => {
-     setFile(event.target.files[0]);
-     setFileName(event.target.files[0].name);
-  };
+  const onFileChange = async (event) => {
+
+    const selectedFile = event.target.files[0];
+    if(selectedFile){
+      setFile(selectedFile);
+      setFileName(selectedFile.name); 
+      navigate('/loading');
+      // fetchData();
+  }
+};
 
    const fetchData = async () => {
      try {
@@ -45,6 +50,7 @@ function UploadMedia() {
        console.error("Error fetching data:", error);
      }
    };
+
   return (
     <div className="uploadMedia">
       <h1>¿Tienes sospecha de que el correo electrónico es phishing?</h1>
