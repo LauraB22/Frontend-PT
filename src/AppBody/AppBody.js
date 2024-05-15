@@ -12,7 +12,7 @@ function AppBody() {
           Phishmail es la herramienta que te ayudará a identificar los correos
           electrónicos que son un intento de estafa
         
-        <Link to="Tutorial">
+        <Link to="/">
         <button className="buttonleer1">
           Leer más
         </button>

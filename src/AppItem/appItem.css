@@ -16,6 +16,11 @@
     padding: 10px;
 }
 
+.appContainer:hover{
+    transform: scale(1.1); /* Aumenta el tamaño del botón al 110% */
+    cursor: pointer;
+}
+
 .appItem img {
     width: 329px;
     height: 250px;

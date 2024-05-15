@@ -49,6 +49,11 @@ function App() {
           </div>
           }/>
 
+          <Route exact path="/tutorial" element={<div>
+            <Tutorial/>
+            <AppFooter/>
+          </div>
+          }/>
         </Routes>
       </>
     </Router>

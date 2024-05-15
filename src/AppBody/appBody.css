@@ -12,9 +12,10 @@
 
 .presentacion{
     display: flex; 
-    margin-top: 60px;
+    margin-top: 20px;
     align-items: center;
     padding: 20px;
+    font-size: 20px;
 }
 
 .presentacion img{
@@ -30,7 +31,7 @@
 .presentacion p{
     margin-left: 30px;
     margin-right: 10px;
-    font-size: 20px;
+    font-size: 28px;
     align-items: center;
     color: rgb(0, 0, 0);
     

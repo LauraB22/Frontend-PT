@@ -1,0 +1,50 @@
+.tutorial{
+    width: 100%;    
+}
+
+.tutorial h1{
+    display: flex;
+    justify-content: center;
+
+}
+
+ol{
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+li{
+    font-size: 22px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.gestor{
+    width: 400px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.capturas{
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 30px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.capturaApp{
+    width: 700px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
