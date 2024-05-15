@@ -21,7 +21,7 @@ function UploadMedia() {
     if(selectedFile){
       setFile(selectedFile);
       setFileName(selectedFile.name); 
-      navigate('/loading');
+      //navigate('/loading');
       // fetchData();
   }
 };
