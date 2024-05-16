@@ -39,7 +39,6 @@ function UploadMedia() {
        );
 
        const result = await response.text();
-       console.log("Data fetched:", result);
        setData(result);
        navigate('/results', {state: {data:result}}); //aqui se navega a la otra pagina donde muestra los resultados
        //el state:{data:result} es para poder pasar datos entre componentes a traves de las rutas  

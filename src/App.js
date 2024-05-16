@@ -4,6 +4,8 @@ import React from "react";
 import { HomePage } from "./HomePage/HomePage.js";
 import { UploadMedia } from "./SubirArchivos/UploadMedia.js";
 import { AppHeader } from "./AppHeader/AppHeader.js";
+import { AppBody } from "./AppBody/AppBody.js";
+import { AppItem } from "./AppItem/AppItem.js";
 import { AppFooter } from "./AppFooter/AppFooter.js";
 import {Tutorial} from "./Tutorial/Tutorial.js";
 import {Results} from "./results/Results.js";
@@ -21,7 +23,8 @@ function App() {
       <AppHeader/>
         <Routes>
           <Route exact path="/"element={<div>
-            <HomePage/>
+            <AppItem/>
+            <AppBody />
             <AppFooter/>  
           </div>}
           />

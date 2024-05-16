@@ -24,12 +24,15 @@ table {
   
   tbody tr:nth-child(odd) {
     background-color: #f9f9f9;
+    text-align: right;
   }
   
   .phishing{
     color: red;
+    font-weight: bolder;
   }
 
   .secure {
-    color: green;
+    color: rgb(20, 213, 20);
+    font-weight: bolder;
   }
