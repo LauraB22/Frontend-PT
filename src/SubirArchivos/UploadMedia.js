@@ -31,7 +31,7 @@ function UploadMedia() {
        const formData = new FormData();
        formData.append("mbox_file", file);
        const response = await fetch(
-         "http://api.phishing-predict.xyz/upload-mbox",
+         "https://api.phishing-predict.xyz/upload-mbox",
          {
            method: "POST",
            body: formData,

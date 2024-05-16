@@ -44,10 +44,10 @@ function App() {
           </div>
           }/>
 
-          <Route exact path="/loading" element={<div>
+          {/* <Route exact path="/loading" element={<div>
             <LoadingPage/>
           </div>
-          }/>
+          }/> */}
 
           <Route exact path="/tutorial" element={<div>
             <Tutorial/>
