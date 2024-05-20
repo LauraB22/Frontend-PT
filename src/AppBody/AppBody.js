@@ -1,7 +1,7 @@
 import React from "react";
-import phish from "../images/que-es-phishing-pharming.jpg";
+// import phish from "../images/que-es-phishing-pharming.jpg";
 import "./appBody.css";
-import { Tutorial } from "../Tutorial/Tutorial";
+// import { Tutorial } from "../Tutorial/Tutorial";
 import { Link } from "react-router-dom";
 
 function AppBody() {

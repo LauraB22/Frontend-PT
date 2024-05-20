@@ -1,7 +1,7 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
-import { HomePage } from "./HomePage/HomePage.js";
+// import { HomePage } from "./HomePage/HomePage.js";
 import { UploadMedia } from "./SubirArchivos/UploadMedia.js";
 import { AppHeader } from "./AppHeader/AppHeader.js";
 import { AppBody } from "./AppBody/AppBody.js";

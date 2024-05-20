@@ -31,7 +31,7 @@ function Results() {
                 <tr key={key} 
                   className={value.Results == 1 ? 'phishing' : 'secure'}>
                   <td>{value["Sender Address"]}</td>
-                  <td>{value.Results == 1 ? 'Posible phishing' : 'Correo seguro'}</td>
+                  <td>{value.Results === 1 ? 'Posible phishing' : 'Correo seguro'}</td>
                 </tr>
             ))}
         </tbody>
