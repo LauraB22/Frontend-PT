@@ -10,6 +10,7 @@ import { AppFooter } from "./AppFooter/AppFooter.js";
 import {Tutorial} from "./Tutorial/Tutorial.js";
 import {Results} from "./results/Results.js";
 import { LoadingPage } from "./LoadingPage/LoadingPage.js";
+import {InfoPhishing} from "./infoPhishing/InfoPhishing.js";
 import {
   BrowserRouter as Router,
   Routes,
@@ -57,7 +58,13 @@ function App() {
             <AppFooter/>
           </div>
           }/>
-        </Routes>
+
+          <Route exact path="/InfoPhishing" element={<div>
+            <InfoPhishing/>
+            <AppFooter/>
+          </div>
+          }/>
+        </Routes> 
       </>
     </Router>
     

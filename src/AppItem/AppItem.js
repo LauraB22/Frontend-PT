@@ -28,7 +28,7 @@ function AppItem() {
       </Link>
 
       <span className="appContainer">
-        <p>Conoce más sobre como utilizar esta herramienta</p>
+        <p>Empieza a utillizar esta herramienta</p>
           <Link to="UploadMedia" className="linkdecor">
             <button 
               className="leemas2">

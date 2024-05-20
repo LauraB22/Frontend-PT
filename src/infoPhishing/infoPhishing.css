@@ -1,0 +1,36 @@
+.containerInfo{
+    display: flex;               /* Usamos Flexbox */
+    flex-direction: column;
+    justify-content: space-around;     /* Centramos el contenido horizontalmente */
+    align-items: center;         /* Centramos el contenido verticalmente */
+    height: 100vh;               /* El contenedor principal ocupa toda la altura de la ventana */
+    padding: 40px;
+  }
+
+  .textoContainer{
+    color: black;
+    align-items: center;
+}
+
+.textoContainer h2{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    
+}
+.textoContainer p{
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.containerVideo{
+    width: 100%;
+    height: 100%;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

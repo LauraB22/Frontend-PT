@@ -10,9 +10,9 @@ function AppBody() {
       <span className="presentacion">
          
           Phishmail es la herramienta que te ayudará a identificar los correos
-          electrónicos que son un intento de estafa
+          electrónicos que son un intento de estafa. Pero, ¿Qué es Phishing?
         
-        <Link to="/">
+        <Link to="InfoPhishing">
         <button className="buttonleer1">
           Leer más
         </button>
