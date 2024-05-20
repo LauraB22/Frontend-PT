@@ -13,6 +13,7 @@ function InfoPhishing() {
         como datos bancarios, contraseñas o información personal. 
         Esta información, obtenida de manera fraudulenta, es luego utilizada para acceder a las cuentas personales de las víctimas,
         provocando pérdidas económicas o usurpación de identidad. </p>
+        gol
       </span>
       <ReactPlayer className="containerVideo"
         url={vidurl} 
