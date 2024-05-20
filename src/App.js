@@ -9,7 +9,7 @@ import { AppItem } from "./AppItem/AppItem.js";
 import { AppFooter } from "./AppFooter/AppFooter.js";
 import {Tutorial} from "./Tutorial/Tutorial.js";
 import {Results} from "./results/Results.js";
-//import { LoadingPage } from "./LoadingPage/LoadingPage.js";
+import { LoadingPage } from "./LoadingPage/LoadingPage.js";
 import {
   BrowserRouter as Router,
   Routes,
@@ -47,10 +47,10 @@ function App() {
           </div>
           }/>
 
-          {/* <Route exact path="/loading" element={<div>
+          <Route exact path="/loading" element={<div>
             <LoadingPage/>
           </div>
-          }/> */}
+          }/>
 
           <Route exact path="/tutorial" element={<div>
             <Tutorial/>
