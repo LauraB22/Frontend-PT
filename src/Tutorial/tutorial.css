@@ -19,20 +19,30 @@ ol{
 li{
     font-size: 22px;
     text-align: justify;
-    padding: 10px;
+    padding: 20px;
 }
 
 .gestor{
-    width: 400px;
+    width: 260px;
     height: 150px;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0 auto;
     border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-right-radius: 15px; 
+
+}
+
+.gestor img{
+    width: 260px;
+    height: 150px;
+   
 }
 
 .capturas{
-    width: auto;
+    width: 700px;
+    height: 350px;
     display: block;
     margin: 0 auto;
     padding: 30px;
@@ -42,9 +52,10 @@ li{
 
 .capturaApp{
     width: 700px;
-    height: 400px;
+    height: 350px;
     display: block;
     margin: 0 auto;
+    padding: 30px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }

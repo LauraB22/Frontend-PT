@@ -1,5 +1,6 @@
 import "./tutorial.css"
-import gestores from "../images/gestores.png"
+import gestorGoogle  from "../images/gestoresGoogle.png"
+import gestorOutlook from "../images/gestoresOutlook.png"
 import ejemplo from "../images/ejemploCorreo.png"
 import blocNotas from "../images/textPlano.png"
 import capturaApp from "../images/capturaApp.png"
@@ -11,11 +12,15 @@ function Tutorial(){
             <h1> ¿Cómo utilizo phishmail? </h1>
             <ol>
                 <li> Para poder utilizar nuestra aplicación debes de ir a tu gestor de correos de tu preferencia.
-                    Puede ser cualquier correo electronico de cualquier dispositivo
-                    <img src={gestores} className="gestor" alt=" "/>
+                    Puede ser cualquier correo electrónico de cualquier dispositivo
+                    <span className="gestor">
+                        <img src={gestorGoogle}  alt=" "/>
+                        <img src={gestorOutlook} alt=""/>
+                    </span>
+                    
                 </li>
                 <li> Selecciona el correo que quieras inspeccionar y descargalo en formato .mbox
-                    En caso de ser gmail, da clic a los tres puntos del lado derecho en el correo y presiona descargar
+                    En caso de ser Gmail, da clic a los tres puntos del lado derecho en el correo y presiona descargar
                     <img src={ejemplo} className="capturas" alt=" " />
                 </li>
 
@@ -27,8 +32,8 @@ function Tutorial(){
                 <li> Abre phishmail y sube el archivo que descargaste en el botón “Usar phishing"
                     <img src={capturaApp} className="capturaApp" alt=" " />
                 </li>
-                <li> Y listo, ya estas listo para utilizar phishmail 
-                    <Link to="UploadMedia" className="linkdecor">
+                <li> Y listo, ya puedes utilizar phishmail 
+                    <Link to="/UploadMedia" className="linkdecor">
                         <button 
                         className="leemas2">
                         Usa Phishmail
