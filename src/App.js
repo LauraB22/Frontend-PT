@@ -9,7 +9,7 @@ import { AppItem } from "./AppItem/AppItem.js";
 import { AppFooter } from "./AppFooter/AppFooter.js";
 import {Tutorial} from "./Tutorial/Tutorial.js";
 import {Results} from "./results/Results.js";
-import { LoadingPage } from "./LoadingPage/LoadingPage.js";
+// import { LoadingPage } from "./LoadingPage/LoadingPage.js";
 import {InfoPhishing} from "./infoPhishing/InfoPhishing.js";
 import {FormasEstafa} from "./FormasEstafa/FormasEstafa.js";
 import {
@@ -48,11 +48,11 @@ function App() {
             <AppFooter/>  
           </div>
           }/>
-
+{/* 
           <Route exact path="./loading" element={<div>
             <LoadingPage/>
           </div>
-          }/>
+          }/> */}
 
           <Route exact path="/tutorial" element={<div>
             <Tutorial/>
