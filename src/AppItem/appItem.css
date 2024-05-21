@@ -34,7 +34,7 @@
 .appItem h3 {
     margin: 0;
     padding: 16px;
-    background: #1FEC9D; 
+    background: #0cbccc; 
     color: black;
     text-align: center;
     align-items: center;
@@ -68,7 +68,7 @@
     padding: 10px;
     border: none;
     border-radius: 15px;
-    background: #ec1f6e; 
+    background: #142157; 
     color: #fbfaf7;
     cursor: pointer;
 }
@@ -79,5 +79,5 @@
 
 .leemas2:hover{
     transform: scale(1.1); /* Aumenta el tamaño del botón al 110% */
-    box-shadow: 0px 5px 5px #B11752;
+    box-shadow: 0px 5px 5px #121D4C;
 }

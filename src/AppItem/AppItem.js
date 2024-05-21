@@ -1,6 +1,6 @@
-import correo from "../images/correopesca.jpg";
-import pesca from "../images/pesca.png";
-import personCandado from "../images/que-es-phishing-pharming.jpg";
+import correo from "../images/correoPesca.jpg";
+import enlaces from "../images/pesca.png";
+import personCandado from "../images/tuto.png";
 import "./appItem.css";
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
@@ -10,13 +10,15 @@ function AppItem() {
 
   return (
     <div className="appItem">
-      <span className="appContainer">
-        <img src={correo} alt="" />
-        <h3>Descubre las formas de estafa</h3>
-      </span>
+      <Link to ="FormasEstafa" className="linkdecor">
+        <span className="appContainer">
+          <img src={correo} alt="" />
+          <h3>Descubre las formas de estafa</h3>
+        </span>
+      </Link>
 
       <span className="appContainer">
-        <img src={pesca} alt="" />
+        <img src={enlaces} alt="" />
         <h3>Evita abrir enlaces sospechosos</h3>
       </span>
 

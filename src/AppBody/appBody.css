@@ -40,7 +40,7 @@
 .buttonleer1{
     height: 60px;
     width: 150px;
-    background-color: #ec1f6e;
+    background-color: #142157;
     border: none;
     border-radius: 15px;
     color: #fbfaf7;
@@ -54,5 +54,5 @@
 
 .buttonleer1:hover{
     transform: scale(1.1); /* Aumenta el tamaño del botón al 110% */
-    box-shadow: 0px 5px 5px #B11752;
+    box-shadow: 0px 5px 5px #121D4C;
 }

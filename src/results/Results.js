@@ -5,41 +5,44 @@ import { useLocation } from "react-router-dom";
 
 function Results() {
   const location = useLocation();
-  const resultados = location.state?.data;
+  const data = location.state?.data;
+  console.log("Datos recibidos en Results:", data);
+  console.log("Tipos de datos ", typeof(data));
 
-  let emails;
-
-    try {
-        emails = JSON.parse(resultados);
-    } catch (error) {
-        console.error('Error parsing JSON:', error);
-        return <p>Error al parsear los datos.</p>;
-    }
+  let dataJson;
+  try {
+    dataJson = JSON.parse(data);
+  } catch (error) {
+    console.error("Error parsing data");
+  }
 
   return (
     <div className="tablaResponsive">
       <h3>Resultados del Análisis</h3>
+      <h4>Numero de Correos Analizados: {dataJson.TotalEmails}</h4>
       <table>
         <thead>
-            <tr>
-                <th>Dirección de correo electrónico del remitente </th>
-                <th>Resultado</th>
-            </tr>
+          <tr>
+            <th>Dirección de correo electrónico del remitente</th>
+            <th>Numero de URLs en correo</th>
+            <th>Arcchivos Adjuntos</th>
+            <th>Resultado</th>
+          </tr>
         </thead>
         <tbody>
-            {Object.entries(emails).map(([key,value]) => (
-                <tr key={key} 
-                  className={value.Results == 1 ? 'phishing' : 'secure'}>
-                  <td>{value["Sender Address"]}</td>
-                  <td>{value.Results === 1 ? 'Posible phishing' : 'Correo seguro'}</td>
-                </tr>
-            ))}
+          
+           {dataJson.Predictions.map((email, index) => (
+            <tr key={index} className={email.Results === 0 ? 'secure' : 'phishing'}>
+              <td>{email["Sender Address"]}</td>
+              <td>{email.NoOfURL}</td>
+              <td>{email.NoAttachments}</td>
+              <td>{email.Results === 0 ? 'Correo seguro' : 'Posible phishing'}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
-      {/*<p>{resultados}</p>*/ }
     </div>
   );
-
 }
 
-export {Results}
+export { Results };

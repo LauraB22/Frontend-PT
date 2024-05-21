@@ -5,10 +5,11 @@
 .tutorial h1{
     display: flex;
     justify-content: center;
+    color: #15297c;
 
 }
 
-ol{
+.tutorial ol{
     justify-content: center;
     align-items: center;
     padding: 30px;
@@ -16,7 +17,7 @@ ol{
     margin-right: 40px;
 }
 
-li{
+.tutorial li{
     font-size: 22px;
     text-align: justify;
     padding: 20px;
@@ -42,7 +43,7 @@ li{
 
 .capturas{
     width: 700px;
-    height: 350px;
+    height: 340px;
     display: block;
     margin: 0 auto;
     padding: 30px;

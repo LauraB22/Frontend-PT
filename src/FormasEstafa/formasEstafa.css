@@ -1,0 +1,71 @@
+.formasestafa{
+    width: 100%; 
+        
+}
+
+.formasestafa h1{
+    display: flex;
+    justify-content: center;
+    padding:20px;
+    color:#15297c
+
+}
+
+.formasestafa h4{
+    text-align: justify;
+    font-weight: bold;
+    color:#15297c
+    
+}
+.formasestafa ol{
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.formasestafa li{
+    font-size: 22px;
+    text-align: justify;
+    /* font-weight: bold; */
+    padding: 20px; 
+}
+
+.formasestafa p{
+    font-size: 18px;
+    text-align: justify;
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ejemplos{
+    width: 800px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.ejemplos2{
+    width: 400px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.ejemplos3{
+    /* width: 420px;
+    height: 490px; */
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    
+}

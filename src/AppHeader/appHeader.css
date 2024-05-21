@@ -1,5 +1,5 @@
 .header {
-    background-color: #ec1f6e;
+    background-color: #142157;
     width: 100%;
     height: 60px;
     display: -webkit-box;
@@ -15,8 +15,15 @@
 
   }
 
+  .logo{
+    width: 40px; /* Ajusta el tamaño según necesites */
+    height: auto; /* Mantiene la proporción del logo */
+    margin-left: 20px; 
+    margin-right: 10px;
+  }
+
   .header h1{
-    margin-left: 40px;
+    margin-left: px 0px;
     font-size: 40px;
     font-weight: bold;
     font-family: 'Trebuchet MS';
@@ -24,7 +31,10 @@
     top: 9rem;
 }
 
-.linkdecor{
+.header .linkdecor {
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    color: black;
+    color: white; /* O cambia esto si deseas otro color para el texto */
+    width: 100%; /* Asegura que el enlace se extienda a lo ancho del header */
 }
