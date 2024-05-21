@@ -1,6 +1,6 @@
 import subir from "../images/subir.png";
 import './uploadMedia.css'
-// import { LoadingPage } from "../LoadingPage/LoadingPage.js";
+import { LoadingPage } from "../LoadingPage/LoadingPage.js";
 import React, { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 
