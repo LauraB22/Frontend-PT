@@ -72,7 +72,7 @@ function UploadMedia() {
       onDrop={handleDrop}>
 
       {isLoading ? (
-        navigate('/LoadingPage')
+        <LoadingPage/>
       ) : (
        <>
           <h1>¿Tienes sospecha de que el correo electrónico es phishing?</h1>
