@@ -1,9 +1,9 @@
-.formasestafa{
+.ConsejosContainer{
     width: 100%; 
         
 }
 
-.formasestafa h1{
+.ConsejosContainer h1{
     display: flex;
     justify-content: center;
     margin:40px;
@@ -11,20 +11,21 @@
 
 }
 
-.formasestafa h4{
+.ConsejosContainer h4{
     text-align: justify;
     font-weight: bold;
     color:#15297c
     
 }
-.formasestafa ol{
+
+.ConsejosContainer ol{
     justify-content: center;
     align-items: center;
     margin-left: 40px;
     margin-right: 40px;
 }
 
-.formasestafa li{
+.ConsejosContainer li{
     font-size: 22px;
     text-align: justify;
     /* font-weight: bold; */
@@ -32,40 +33,21 @@
     
 }
 
-.formasestafa p{
+.ConsejosContainer p{
     display: flex;
     font-size: 18px;
     text-align: justify;
     margin-top: 20px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 60px;
+    margin-right: 60px;
     margin-bottom: 20px;
     justify-content: center;
     align-items: center;
 }
 
-.ejemplos{
+.imagePhishing{
     width: 800px;
     height: 400px;
-    display: block;
-    margin: 0 auto;
-    padding: 20px;
-    
-}
-
-.ejemplos2{
-    width: 400px;
-    height: 500px;
-    display: block;
-    margin: 0 auto;
-    padding: 20px;
-    
-}
-
-.ejemplos3{
-    /* width: 420px;
-    height: 490px; */
-    width: 40%;
     display: block;
     margin: 0 auto;
     padding: 20px;

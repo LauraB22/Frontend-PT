@@ -16,11 +16,13 @@ function AppItem() {
           <h3>Descubre las formas de estafa</h3>
         </span>
       </Link>
-
-      <span className="appContainer">
+      
+      <Link to="ConsejosPhishing" className="linkdecor">
+        <span className="appContainer">
         <img src={enlaces} alt="" />
-        <h3>Evita abrir enlaces sospechosos</h3>
-      </span>
+        <h3>Consejos para evitar ser víctima de phishing</h3>
+        </span>
+      </Link>
 
       <Link to ="Tutorial" className="linkdecor">
         <span className="appContainer">

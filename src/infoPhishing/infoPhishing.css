@@ -4,7 +4,8 @@
     justify-content: space-around;     /* Centramos el contenido horizontalmente */
     align-items: center;         /* Centramos el contenido verticalmente */
     height: 100vh;               /* El contenedor principal ocupa toda la altura de la ventana */
-    padding: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
   .textoContainer{
@@ -16,6 +17,7 @@
     justify-content: center;
     font-size: 30px;
     color: #15297c;
+    margin-top: 40px;
     
 }
 .textoContainer p{
