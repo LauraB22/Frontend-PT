@@ -1,11 +1,12 @@
 .appItem{
-    margin: 20px;
+    margin: 3.5vh;
     background: #fbfaf7;
-    padding: 10px;
+    padding: 1vh;
     overflow: hidden;
     display:flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row; 
 }
 
 .appContainer{
@@ -13,7 +14,7 @@
     flex-wrap: wrap; 
     justify-content: space-around; 
     align-items: stretch; 
-    padding: 10px;
+    padding: 2vh;
 }
 
 .appContainer:hover{
@@ -80,4 +81,31 @@
 .leemas2:hover{
     transform: scale(1.1); /* Aumenta el tamaño del botón al 110% */
     box-shadow: 0px 5px 5px #121D4C;
+}
+
+
+@media (max-width: 768px) {
+    .appItem {
+        flex-direction: column; /* Cambia a vertical en dispositivos más pequeños */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .appItem img, .appItem h3 {
+        width: 100%; /* Ajusta elementos para ocupar todo el ancho disponible */
+    }
+
+    .leemas2 {
+        width: 100%; /* Botón ajusta ancho a todo el contenedor */
+    }
+}
+
+@media (max-width: 480px) {
+    .appItem {
+        margin: 10px; /* Menor margen para dispositivos muy pequeños */
+    }
+
+    .appItem p {
+        font-size: 0.9rem; /* Texto más pequeño para mejor lectura en pantallas pequeñas */
+    }
 }

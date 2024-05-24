@@ -12,9 +12,9 @@
 
 .presentacion{
     display: flex; 
-    margin-top: 20px;
+    margin-top: 3vh;
     align-items: center;
-    padding: 20px;
+    padding: 3vh;
     font-size: 20px;
 }
 
