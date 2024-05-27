@@ -19,26 +19,23 @@
 }
 
 .uploadMedia img{
-    width: 300px;
-    height: 300px;
-    display: block;
+    max-width: 50%; /* Asegura que la imagen es responsive */
+    height: 50%; /* Mantiene la proporción de la imagen */
     margin: 0 auto;
+    border-radius: 15px; 
     
 }
 
 
 .buttonexaminar {    
     display: block;
-    width: 150px;
+    max-width: 150px;
     height: 30px;
-    font-family: 'Muli', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 10px 40px;
+    font-size: calc(12px + 0.5vw); /* Ajusta el tamaño de fuente responsivamente */
+    margin: 20px auto; /* Centra el botón horizontalmente */
     padding: 10px;
-    border: none;
     border-radius: 15px;
-    background: #142157; 
+    background: #142157;
     color: #fbfaf7;
     cursor: pointer;
     text-align: center;
@@ -48,4 +45,14 @@
 .buttonexaminar:hover{
     transform: scale(1.1); /* Aumenta el tamaño del botón al 110% */
     box-shadow: 0px 5px 5px #121D4C;
+}
+
+@media (max-width: 768px) {
+  .uploadMedia img {
+      max-width: 80%; /* Ajusta el tamaño de la imagen para pantallas más pequeñas */
+  }
+
+  .buttonexaminar {
+      font-size: calc(10px + 2vw); /* Incrementa el tamaño de fuente en pantallas pequeñas */
+  }
 }

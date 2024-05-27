@@ -4,8 +4,7 @@
 }
 
 .ConsejosContainer h1{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin:40px;
     color:#15297c
 
@@ -19,37 +18,50 @@
 }
 
 .ConsejosContainer ol{
-    justify-content: center;
-    align-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
+    padding-left: 40px; /* Asegura que el padding sea consistente para las listas */
+    padding-right: 40px;
+    text-align: center; /* Para centrar los números de lista si es necesario */
 }
 
 .ConsejosContainer li{
-    font-size: 22px;
+    font-size: calc(16px + 0.4vw); /* Tamaño de fuente adaptable */
     text-align: justify;
-    /* font-weight: bold; */
-    margin: 20px; 
-    
+    margin: 20px;
 }
 
 .ConsejosContainer p{
-    display: flex;
-    font-size: 18px;
+    font-size: calc(14px + 0.3vw); /* Tamaño de fuente adaptable */
     text-align: justify;
-    margin-top: 20px;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-bottom: 20px;
-    justify-content: center;
-    align-items: center;
+    margin: 20px 60px; /* Margen más claro y consistente */
 }
 
 .imagePhishing{
-    width: 800px;
-    height: 400px;
+    max-width: 80%; /* Hace que la imagen sea completamente responsiva */
+    height: auto; /* Mantiene la proporción de la imagen */
     display: block;
     margin: 0 auto;
     padding: 20px;
     
+}
+
+
+@media (max-width: 768px) {
+    .ConsejosContainer h1, .ConsejosContainer h4, .ConsejosContainer p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .ConsejosContainer li, .ConsejosContainer p {
+        font-size: calc(14px + 0.5vw); /* Ajustar el tamaño de la fuente para pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .ConsejosContainer ol, .ConsejosContainer li, .ConsejosContainer p {
+        margin: 10px;
+    }
+
+    .imagePhishing {
+        padding: 10px;
+    }
 }

@@ -12,19 +12,21 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+            
 
   }
 
   .logo{
     width: 40px; /* Ajusta el tamaño según necesites */
     height: auto; /* Mantiene la proporción del logo */
-    margin-left: 20px; 
-    margin-right: 10px;
+    flex-shrink: 0; /* Evita que el logo se reduzca */
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .header h1{
-    margin-left: px 0px;
-    font-size: 40px;
+    margin-left:0px;
+    font-size: calc(16px + 1vw); /* Tamaño de fuente adaptable */
     font-weight: bold;
     font-family: 'Trebuchet MS';
     font-style: initial;
@@ -35,6 +37,32 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: white; /* O cambia esto si deseas otro color para el texto */
-    width: 100%; /* Asegura que el enlace se extienda a lo ancho del header */
+    color: white; 
+}
+
+/* Media Queries para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: calc(12px + 2vw); /* Reduce el tamaño de la fuente en pantallas más pequeñas */
+    }
+
+    .logo {
+        width: 35px; /* Reduce el tamaño del logo en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column; /* Cambia la disposición a vertical en pantallas muy pequeñas */
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: calc(10px + 2.5vw); /* Ajusta aún más el tamaño de la fuente */
+    }
+
+    .header .linkdecor {
+        order: -1; /* Coloca el enlace arriba en la disposición vertical */
+        margin-bottom: 10px; /* Añade un espacio después del enlace */
+    }
 }

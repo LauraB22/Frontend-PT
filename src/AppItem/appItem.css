@@ -11,6 +11,7 @@
 
 .appContainer{
     display: flex;
+    width: 100%;
     flex-wrap: wrap; 
     justify-content: space-around; 
     align-items: stretch; 
@@ -60,13 +61,13 @@
 
 .leemas2 {    
     display: block;
-    width: 150px;
+    width: 150px    ;
     height: 60px;
     font-family: 'Muli', sans-serif;
     font-size: 16px;
     font-weight: bold;
-    margin: 0 auto 16px;
-    padding: 10px;
+    margin: 0 auto;
+    padding: 8px;
     border: none;
     border-radius: 15px;
     background: #142157; 
@@ -84,7 +85,39 @@
 }
 
 
+@media (max-width: 1024px) {
+    .appItem {
+        flex-direction: column; /* Cambia a vertical en dispositivos más pequeños */
+        justify-content: center;
+        align-items: center;
+    }
+    .appItem img {
+        max-width: 90%; 
+    }
+    .appItem h3 {
+        max-width: 100%; /* Ajusta elementos para ocupar todo el ancho disponible */
+        flex-direction: column; /* Cambia a vertical en dispositivos más pequeños */
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        box-shadow: 0px 5px 5px black;
+        
+    }
+
+}
+
 @media (max-width: 768px) {
+    .appItem {
+        flex-direction: column;
+    }
+
+    .appItem img {
+        max-width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
     .appItem {
         flex-direction: column; /* Cambia a vertical en dispositivos más pequeños */
         justify-content: center;
@@ -92,20 +125,10 @@
     }
 
     .appItem img, .appItem h3 {
-        width: 100%; /* Ajusta elementos para ocupar todo el ancho disponible */
+        max-width: 100%; /* Ajusta elementos para ocupar todo el ancho disponible */
     }
 
     .leemas2 {
         width: 100%; /* Botón ajusta ancho a todo el contenedor */
-    }
-}
-
-@media (max-width: 480px) {
-    .appItem {
-        margin: 10px; /* Menor margen para dispositivos muy pequeños */
-    }
-
-    .appItem p {
-        font-size: 0.9rem; /* Texto más pequeño para mejor lectura en pantallas pequeñas */
     }
 }

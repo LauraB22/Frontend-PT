@@ -1,24 +1,84 @@
+/* Estilos básicos del footer */
 .appfooter {
   background-color: #e3e3e3;
   width: 100%;
-  height: 12vh;
+  height: 12vh;  
   display: flex;
   justify-content: space-between;  /* Alinea los elementos a los extremos */
   align-items: center;             /* Centra los elementos verticalmente */
-  padding: 2vh 20px;              /* Espacio alrededor del contenido dentro del footer */
+  padding: 2vh 20px;               /* Espacio alrededor del contenido dentro del footer */
   box-sizing: border-box;          /* Incluye el padding en el cálculo del ancho */
   margin-top: 20px;
   margin-bottom: auto;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+-webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
 
+}
+
+.appfooter img {
+  height: 80px;                     
+}
+
+.appfooter p {
+  text-align: center;
+  align-items: center;
+}
+
+/* @media only screen and (max-height: 1024px) {
+  .appfooter {
+    height: 15vh;  
+    padding: 3vh 20px; 
   }
 
-  .appfooter img{
-    height: 80px;                     /* Altura fija para las imágenes, ajusta según necesidad */
-    /* padding: 10px;  */
+  .appfooter img {
+    height: 70px;  
   }
 
-  .appfooter p{
-    text-align: center;
-    align-items: center;
+  .appfooter p {
+    font-size: 20px; 
   }
+} */
+
+@media only screen and (max-width: 1024px) {
+  .appfooter {
+    height: 15vh;  
+    padding: 3vh 20px; 
+  }
+
+  .appfooter img {
+    height: 70px;  
+  }
+
+  .appfooter p {
+    font-size: 14px; 
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .appfooter {
+    flex-direction: column; 
+    height: auto;  
+    padding: 20px; 
+  }
+
+  .appfooter img {
+    margin-bottom: 10px;  
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .appfooter {
+    padding: 10px;  
+  }
+
+  .appfooter p {
+    font-size: 12px; 
+  }
+}
+
+
 

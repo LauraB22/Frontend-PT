@@ -35,7 +35,7 @@ function Tutorial(){
                 <li> Y listo, ya puedes utilizar phishmail 
                     <Link to="/UploadMedia" className="linkdecor">
                         <button 
-                        className="leemas2">
+                        className="usaphishmail">
                         Usa Phishmail
                         </button>
                     </Link>

@@ -1,7 +1,7 @@
 .table-responsive {
   display: flex;
-  display: flex;
   justify-content: center; /* Centra los elementos horizontalmente dentro del contenedor */
+  flex-direction: column;
   align-items: center; /* Centra los elementos verticalmente dentro del contenedor */
   min-height: 100vh;
 }
@@ -20,32 +20,59 @@ h4{
 }
 
 table {
-  width: 80%; /* O cualquier ancho que prefieras */
-  margin: auto; /* Importante para centrar la tabla si no estás usando flexbox en el contenedor */
+  width: 100%; /* O cualquier ancho que prefieras */
+  max-width: 80%;
+  margin: 20px auto; /* Importante para centrar la tabla si no estás usando flexbox en el contenedor */
   border-collapse: collapse;
 }
   
-  th, td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  th {
-    background-color: #f4f4f4;
-  }
-  
-  tbody tr:nth-child(odd) {
-    background-color: #f9f9f9;
-    text-align: right;
-  }
-  
-  .phishing{
-    color: red;
-    font-weight: bolder;
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+  text-align: right;
+}
+
+.phishing{
+  color: red;
+  font-weight: bolder;
+}
+.secure {
+  color: rgb(20, 213, 20);
+  font-weight: bolder;
+}
+.secure {
+  color: green; /* Cambiado para mejorar la legibilidad */
+  font-weight: bolder;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+  table, th, td {
+    width: 100%;
+    padding: 8px;
   }
 
-  .secure {
-    color: rgb(20, 213, 20);
-    font-weight: bolder;
+  h4 {
+    margin: 10px; /* Reduce los márgenes para pantallas más pequeñas */
   }
+}
+
+@media (max-width: 480px) {
+  .table-responsive {
+    padding: 0; /* Elimina el padding en dispositivos muy pequeños */
+  }
+
+  table, th, td {
+    width: 50%;
+    padding: 8px;
+  }
+}

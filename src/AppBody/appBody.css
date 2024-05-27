@@ -3,45 +3,40 @@
 }
 
 .appBody h2{
-    justify-content: center;
-    margin-left: 30px;
-    margin-right: 20px;
-    width: 300px;
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 0 auto; /* Centra el elemento */
+    width: 90%; /* Ajusta el ancho máximo */
     height: auto;
 }
 
 .presentacion{
-    display: flex; 
-    margin-top: 3vh;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
     align-items: center;
     padding: 3vh;
-    font-size: 20px;
+    font-size: calc(12px + 0.5vw); /* Ajusta dinámicamente el tamaño de la fuente */
 }
 
 .presentacion img{
-    flex: 1;
-    margin-left: 10px;
-    margin-right: 20px;
-    width: 500px;
+    flex: 1 1 auto; /* Permite que la imagen se ajuste */
+    max-width: 100%; /* Limita el ancho máximo al del contenedor */
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 5px 5px black;
+    margin: 10px; /* Añade un margen estándar alrededor de la imagen */
 
 }
 .presentacion p{
-    margin-left: 30px;
-    margin-right: 10px;
-    font-size: 28px;
-    align-items: center;
+    flex: 1 1 50%; /* Toma al menos el 50% del espacio cuando es posible */
+    font-size: calc(16px + 0.5vw); /* Tamaño de fuente adaptable */
     color: rgb(0, 0, 0);
-    
+    padding: 10px; /* Añade padding para espacio alrededor del texto */  
 }
 
 .buttonleer1{
+    width: 150px; /* Máximo ancho del botón */
     height: 60px;
-    width: 150px;
     background-color: #142157;
-    border: none;
     border-radius: 15px;
     color: #fbfaf7;
     cursor: pointer;
@@ -49,10 +44,23 @@
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 1px;
-    margin: 10px 40px;
+    margin: 10px;
+    text-align: center; /* Asegura que el texto dentro del botón esté centrado */
+    padding: 10px 0; /* Añade padding para aumentar la accesibilidad */
 }
 
 .buttonleer1:hover{
     transform: scale(1.1); /* Aumenta el tamaño del botón al 110% */
     box-shadow: 0px 5px 5px #121D4C;
+}
+
+
+@media (max-width: 768px) {
+    .presentacion {
+        flex-direction: column; /* Cambia la dirección a vertical en dispositivos pequeños */
+    }
+    
+    .presentacion img, .presentacion p {
+        max-width: 100%; /* Asegura que no sobrepasen el ancho del dispositivo */
+    }
 }

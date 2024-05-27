@@ -4,8 +4,7 @@
 }
 
 .formasestafa h1{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin:40px;
     color:#15297c
 
@@ -18,56 +17,38 @@
     
 }
 .formasestafa ol{
-    justify-content: center;
-    align-items: center;
-    margin-left: 40px;
-    margin-right: 40px;
+    padding-left: 40px; /* Uso de padding en lugar de margin para control interno */
+    padding-right: 40px;
 }
 
 .formasestafa li{
-    font-size: 22px;
+    font-size: calc(16px + 0.6vw); /* Tamaño de fuente adaptable */
     text-align: justify;
-    /* font-weight: bold; */
-    margin: 20px; 
+    margin: 20px;
     
 }
 
 .formasestafa p{
-    display: flex;
-    font-size: 18px;
+    font-size: calc(14px + 0.4vw); /* Tamaño de fuente adaptable */
     text-align: justify;
-    margin-top: 20px;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-bottom: 20px;
-    justify-content: center;
-    align-items: center;
+    margin: 20px 80px;
 }
 
-.ejemplos{
-    width: 800px;
-    height: 400px;
+.ejemplos, .ejemplos2 {
+    max-width: 80%; /* Usa max-width para adaptabilidad */
+    height: auto; /* Altura auto para mantener proporciones */
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
-    
+    box-sizing: border-box;
 }
 
-.ejemplos2{
-    width: 400px;
-    height: 500px;
+.ejemplos3 {
+    width: 40%; /* Mantén un porcentaje para responsividad */
+    height: auto; /* Altura automática para mantener proporciones */
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
-    
+    box-sizing: border-box;
 }
 
-.ejemplos3{
-    /* width: 420px;
-    height: 490px; */
-    width: 40%;
-    display: block;
-    margin: 0 auto;
-    padding: 20px;
-    
-}

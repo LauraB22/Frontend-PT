@@ -4,35 +4,57 @@
     justify-content: space-around;     /* Centramos el contenido horizontalmente */
     align-items: center;         /* Centramos el contenido verticalmente */
     height: 100vh;               /* El contenedor principal ocupa toda la altura de la ventana */
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 0 40px;
   }
 
   .textoContainer{
     align-items: center;
+    width: 100%;
 }
 
 .textoContainer h2{
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
+    font-size: calc(24px + 1vw); /* Tamaño de fuente adaptable */
     color: #15297c;
-    margin-top: 40px;
+    margin: 40px 0; /* Margin top simplificado y removido el margin bottom específico */
+    text-align: center;
     
 }
 .textoContainer p{
-    justify-content: center;
-    margin-top: 40px;
-    margin-left: 60px;
-    margin-right: 60px;
     text-align: justify;
-    font-size: 20px;
+    margin: 40px 60px; /* Asegúrate de que los márgenes sean responsivos */
+    font-size: calc(16px + 0.5vw); /* Tamaño de fuente adaptable */
 }
 
 .containerVideo{
     width: 100%;
-    height: 100%;
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
     border: 5px solid #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px; /* Añade padding para no tocar los bordes directamente */
+}
+
+/* Media Queries para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    .containerInfo {
+        margin: 0 20px; /* Reduce el margen en dispositivos más pequeños */
+    }
+
+    .textoContainer h2, .textoContainer p {
+        margin: 20px; /* Margen reducido para pantallas más pequeñas */
+    }
+
+    .textoContainer p {
+        font-size: calc(14px + 0.5vw); /* Tamaño de fuente más pequeño en dispositivos estrechos */
+    }
+}
+
+@media (max-width: 480px) {
+    .containerInfo {
+        margin: 0 10px; /* Margen aún más pequeño para dispositivos muy pequeños */
+    }
+
+    .textoContainer p {
+        margin: 10px; /* Margen ajustado para maximizar el espacio utilizable */
+    }
 }

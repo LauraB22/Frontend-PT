@@ -3,8 +3,7 @@
 }
 
 .tutorial h1{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     color: #15297c;
 
 }
@@ -14,7 +13,12 @@
     align-items: center;
     padding: 30px;
     margin-left: 40px;
-    margin-right: 40px;
+    margin-right: 40px;display: flex; /* Asegurarse de que flex se aplica correctamente */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 0 40px; /* Uso de márgenes laterales consistentes */
 }
 
 .tutorial li{
@@ -23,40 +27,76 @@
     padding: 20px;
 }
 
-.gestor{
-    width: 260px;
-    height: 150px;
+.gestor {
+    width: 160px;            /* Ancho fijo para los contenedores en pantallas grandes */
+    height: 150px;           /* Altura fija */
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+    justify-content: center; /* Centra el contenido (imagen) horizontalmente */
+    align-items: center;     /* Centra el contenido (imagen) verticalmente */
+    margin: 0 auto;          /* Centra `.gestor` en el contenedor padre */
+    padding: 20px;           /* Espacio interno para no tocar los bordes directamente */
     border-top-left-radius: 15px;
-    border-top-right-radius: 15px; 
-
+    border-top-right-radius: 15px;
 }
 
-.gestor img{
-    width: 260px;
-    height: 150px;
-   
+.gestor img {
+    max-width: 100%;         /* Asegura que la imagen se ajuste al contenedor `.gestor` */
+    height: auto;            /* Mantiene la proporción de la imagen automáticamente */
+    border-radius: 15px;     /* Redondea las esquinas de la imagen */
 }
 
 .capturas{
-    width: 700px;
-    height: 340px;
+    max-width: 80%; /* Hacer que el contenedor sea responsivo */
+    height: auto; /* Ajustar altura automáticamente */
     display: block;
     margin: 0 auto;
     padding: 30px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-radius: 15px;
 }
 
+
 .capturaApp{
-    width: 700px;
-    height: 350px;
+    max-width: 80%; /* Hacer que el contenedor sea responsivo */
+    height: auto; /* Ajustar altura automáticamente */
     display: block;
     margin: 0 auto;
     padding: 30px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-radius: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .gestor {
+        width: 30%; /* Hace que el `.gestor` se expanda para ocupar el ancho disponible */
+        margin: 10px auto; /* Ajusta el margen para un centrado adecuado */
+        padding: 10px; /* Reduce el padding para dispositivos más pequeños */
+    }
+}
+
+.usaphishmail {
+    display: block;
+    width: 150px;
+    height: 60px;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+    background: #142157;
+    color: #fbfaf7;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+    .gestor {
+        width: 90%; /* Da un poco de espacio a los lados en dispositivos muy pequeños */
+        padding: 5px; /* Padding reducido aún más para maximizar el espacio de la imagen */
+    }
+
+    .gestor img {
+        width: 100%; /* Asegura que la imagen use el ancho completo de `.gestor` */
+    }
 }
