@@ -24,7 +24,7 @@ function Results() {
         <thead>
           <tr>
             <th>Dirección de correo electrónico del remitente</th>
-            <th>Numero de URLs en correo</th>
+            <th>Número de URLs en correo</th>
             <th>Archivos Adjuntos</th>
             <th>Resultado</th>
           </tr>
