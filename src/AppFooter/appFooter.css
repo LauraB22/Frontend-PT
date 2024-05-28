@@ -1,45 +1,45 @@
 .appfooter {
   background-color: #e3e3e3;
   width: 100%;
-  padding: 10px 20px; /* Reduce el padding si es necesario */
+  padding: 10px 20px; 
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas si no caben */
+  flex-wrap: wrap; 
   margin-top: 0;
   margin-bottom: 0;
 
 }
 
 .appfooter img {
-  height: 80px; /* Altura fija para las imágenes */
+  height: 80px; 
   flex: 0 0 auto;           
 }
 
 .appfooter p {
-  flex-grow: 1; /* Permite que el texto ocupe el espacio disponible */
-  text-align: center; /* Centra el texto horizontalmente */
-  margin: 0; /* Elimina cualquier margen por defecto */
+  flex-grow: 1; 
+  text-align: center; 
+  margin: 0; 
   color: #15297c;
-  padding: 0 16px; /* Padding para asegurar espacio alrededor del texto */
+  padding: 0 16px; 
 }
 
 
 
 @media (max-width: 768px) {
   .appfooter {
-    flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
+    flex-direction: column; 
     text-align: center;
   }
 
   .appfooter img {
-    margin-bottom: 10px; /* Añade espacio entre la imagen y el texto */
+    margin-bottom: 10px; 
   }
 }
 
 @media (max-width: 480px) {
   .appfooter img {
-    height: 60px; /* Reduce la altura de las imágenes en dispositivos muy pequeños */
+    height: 60px; 
   }
 }
