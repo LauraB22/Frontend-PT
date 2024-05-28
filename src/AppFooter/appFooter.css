@@ -1,84 +1,45 @@
-/* Estilos básicos del footer */
 .appfooter {
   background-color: #e3e3e3;
   width: 100%;
-  height: 12vh;  
+  padding: 10px 20px; /* Reduce el padding si es necesario */
+  box-sizing: border-box;
   display: flex;
-  justify-content: space-between;  /* Alinea los elementos a los extremos */
-  align-items: center;             /* Centra los elementos verticalmente */
-  padding: 2vh 20px;               /* Espacio alrededor del contenido dentro del footer */
-  box-sizing: border-box;          /* Incluye el padding en el cálculo del ancho */
-  margin-top: 20px;
-  margin-bottom: auto;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
--webkit-box-align: center;
-  -ms-flex-align: center;
-      align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas si no caben */
+  margin-top: 0;
+  margin-bottom: 0;
 
 }
 
 .appfooter img {
-  height: 80px;                     
+  height: 80px; /* Altura fija para las imágenes */
+  flex: 0 0 auto;           
 }
 
 .appfooter p {
-  text-align: center;
-  align-items: center;
+  flex-grow: 1; /* Permite que el texto ocupe el espacio disponible */
+  text-align: center; /* Centra el texto horizontalmente */
+  margin: 0; /* Elimina cualquier margen por defecto */
+  color: #15297c;
+  padding: 0 16px; /* Padding para asegurar espacio alrededor del texto */
 }
 
-/* @media only screen and (max-height: 1024px) {
+
+
+@media (max-width: 768px) {
   .appfooter {
-    height: 15vh;  
-    padding: 3vh 20px; 
+    flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
+    text-align: center;
   }
 
   .appfooter img {
-    height: 70px;  
+    margin-bottom: 10px; /* Añade espacio entre la imagen y el texto */
   }
+}
 
-  .appfooter p {
-    font-size: 20px; 
-  }
-} */
-
-@media only screen and (max-width: 1024px) {
-  .appfooter {
-    height: 15vh;  
-    padding: 3vh 20px; 
-  }
-
+@media (max-width: 480px) {
   .appfooter img {
-    height: 70px;  
-  }
-
-  .appfooter p {
-    font-size: 14px; 
+    height: 60px; /* Reduce la altura de las imágenes en dispositivos muy pequeños */
   }
 }
-
-@media only screen and (max-width: 768px) {
-  .appfooter {
-    flex-direction: column; 
-    height: auto;  
-    padding: 20px; 
-  }
-
-  .appfooter img {
-    margin-bottom: 10px;  
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .appfooter {
-    padding: 10px;  
-  }
-
-  .appfooter p {
-    font-size: 12px; 
-  }
-}
-
-
-

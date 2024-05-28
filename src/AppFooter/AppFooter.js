@@ -8,6 +8,9 @@ function AppFooter(){
             <img src={ipn} alt=""/>
             <p> Proyecto Terminal </p>
             <p>Ingeniería Telemática</p>
+            <p>Presentado por:</p>
+            <p>Bazaldua Monroy Laura</p>
+            <p>Martín Moreno Cesar Sadrak</p>
             <img src={upiita} alt=""/>
         </footer>
             
