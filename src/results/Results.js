@@ -8,7 +8,6 @@ function Results() {
   const data = location.state?.data;
   let numValidEmails = 0;
   let numPhishingEmails = 0;
-  let emailClass = "";
   console.log("Datos recibidos en Results:", data);
   console.log("Tipos de datos ", typeof(data));
 
@@ -22,10 +21,8 @@ function Results() {
   dataJson.Predictions.map((email, index) => {
     if (email.Results === 0) {
       numValidEmails++;
-      emailClass = "secure";
     }else{
       numPhishingEmails++;
-      emailClass = "phishing";
     }
   });
 
@@ -48,7 +45,7 @@ function Results() {
         </thead>
         <tbody>
           {dataJson.Predictions.map((email, index) => (
-          <tr key={index} className={emailClass}>
+          <tr key={index} className={email.Results === 0 ? 'secure' : 'phishing'}>
             <td>{email["Sender Address"]}</td>
             <td>{email.NoOfURL}</td>
             <td>{email.NoDotsUrls}</td>
