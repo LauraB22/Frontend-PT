@@ -8,6 +8,7 @@ import { AppBody } from "./AppBody/AppBody.js";
 import { AppItem } from "./AppItem/AppItem.js";
 import { AppFooter } from "./AppFooter/AppFooter.js";
 import {Tutorial} from "./Tutorial/Tutorial.js";
+import { TutorialOutlook } from "./TutorialOutlook/TutorialOutlook.js";
 import {Results} from "./results/Results.js";
 import { LoadingPage } from "./LoadingPage/LoadingPage.js";
 import {InfoPhishing} from "./infoPhishing/InfoPhishing.js";
@@ -57,6 +58,12 @@ function App() {
 
           <Route exact path="/tutorial" element={<div>
             <Tutorial/>
+            <AppFooter/>
+          </div>
+          }/>
+
+          <Route exact path="/tutorialOutlook" element={<div>
+            <TutorialOutlook/>
             <AppFooter/>
           </div>
           }/>
