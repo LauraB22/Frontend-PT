@@ -25,7 +25,8 @@ function Results() {
           <tr>
             <th>Dirección de correo electrónico del remitente</th>
             <th>Número de URLs en correo</th>
-            <th>Archivos Adjuntos</th>
+            <th>Número de puntos en URLs</th>
+            <th>Número de carácteres especiales en URLs</th>
             <th>Resultado</th>
           </tr>
         </thead>
@@ -35,7 +36,8 @@ function Results() {
             <tr key={index} className={email.Results === 0 ? 'secure' : 'phishing'}>
               <td>{email["Sender Address"]}</td>
               <td>{email.NoOfURL}</td>
-              <td>{email.NoAttachments}</td>
+              <td>{email.NoDotsUrls}</td>
+              <td>{email.NoSpecialChar}</td>
               <td>{email.Results === 0 ? 'Correo seguro' : 'Posible phishing'}</td>
             </tr>
           ))}
