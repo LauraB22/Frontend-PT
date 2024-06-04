@@ -6,6 +6,9 @@ import { useLocation } from "react-router-dom";
 function Results() {
   const location = useLocation();
   const data = location.state?.data;
+  let numValidEmails = 0;
+  let numPhishingEmails = 0;
+  let emailClass = "";
   console.log("Datos recibidos en Results:", data);
   console.log("Tipos de datos ", typeof(data));
 
@@ -16,10 +19,23 @@ function Results() {
     console.error("Error parsing data");
   }
 
+  dataJson.Predictions.map((email, index) => {
+    if (email.Results === 0) {
+      numValidEmails++;
+      emailClass = "secure";
+    }else{
+      numPhishingEmails++;
+      emailClass = "phishing";
+    }
+  });
+
   return (
     <div className="tablaResponsive">
       <h3>Resultados del Análisis</h3>
       <h4>Numero de Correos Analizados: {dataJson.TotalEmails}</h4>
+      <h4>Numero de Correos Inválidos: {dataJson.InvalidEmails}</h4>
+      <h4>Numero de posibles Correos Phishing: {numPhishingEmails}</h4>
+      <h4>Numero de poisbles Correos Seguros: {numValidEmails}</h4>
       <table>
         <thead>
           <tr>
@@ -31,16 +47,15 @@ function Results() {
           </tr>
         </thead>
         <tbody>
-          
-           {dataJson.Predictions.map((email, index) => (
-            <tr key={index} className={email.Results === 0 ? 'secure' : 'phishing'}>
-              <td>{email["Sender Address"]}</td>
-              <td>{email.NoOfURL}</td>
-              <td>{email.NoDotsUrls}</td>
-              <td>{email.NoSpecialChar}</td>
-              <td>{email.Results === 0 ? 'Correo seguro' : 'Posible phishing'}</td>
-            </tr>
-          ))}
+          {dataJson.Predictions.map((email, index) => (
+          <tr key={index} className={emailClass}>
+            <td>{email["Sender Address"]}</td>
+            <td>{email.NoOfURL}</td>
+            <td>{email.NoDotsUrls}</td>
+            <td>{email.NoSpecialChar}</td>
+            <td>{email.Results === 0 ? 'Correo seguro' : 'Posible phishing'}</td>
+          </tr>
+        ))}
         </tbody>
       </table>
     </div>
