@@ -1,6 +1,5 @@
 import React from "react";
 import "./results.css";
-import { UploadMedia } from "../SubirArchivos/UploadMedia";
 import { useLocation } from "react-router-dom";
 
 function Results() {
@@ -18,7 +17,7 @@ function Results() {
     console.error("Error parsing data");
   }
 
-  dataJson.Predictions.map((email, index) => {
+  dataJson.Predictions.map((email) => {
     if (email.Results === 0) {
       numValidEmails++;
     }else{
