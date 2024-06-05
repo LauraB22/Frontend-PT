@@ -5,7 +5,6 @@ import React from "react";
 import { UploadMedia } from "./SubirArchivos/UploadMedia.js";
 import { AppHeader } from "./AppHeader/AppHeader.js";
 import { AppBody } from "./AppBody/AppBody.js";
-import { AppItem } from "./AppItem/AppItem.js";
 import { AppFooter } from "./AppFooter/AppFooter.js";
 import {Tutorial} from "./Tutorial/Tutorial.js";
 import { TutorialOutlook } from "./TutorialOutlook/TutorialOutlook.js";
@@ -27,8 +26,7 @@ function App() {
       <AppHeader/>
         <Routes>
           <Route exact path="/"element={<div>
-            <AppItem/>
-            <AppBody />
+            <AppBody/>
             <AppFooter/>  
           </div>}
           />
@@ -51,7 +49,7 @@ function App() {
           </div>
           }/>
 
-          <Route exact path="./loading" element={<div>
+          <Route exact path="/loading" element={<div>
             <LoadingPage/>
           </div>
           }/>

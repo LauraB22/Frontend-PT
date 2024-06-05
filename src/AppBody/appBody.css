@@ -1,5 +1,141 @@
+.appItem{
+    max-width: 100%;
+    margin: 3.5vh;
+    background: #fbfaf7;
+    padding: 1vh;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; 
+}
+
+.appContainer{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    align-items: stretch; 
+    padding: 2vh;
+}
+
+.appItem img {
+    width: 329px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+     
+}
+
+.appItem h3 {
+    margin: 0;
+    padding: 16px;
+    background: #0cbccc; 
+    color: black;
+    text-align: center;
+    align-items: center;
+    width: 298px;
+    height: 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 5px 5px black;
+}
+
+.appItem p {
+    padding: 10px 16px 16px;
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.leemas2 {    
+    display: block;
+    width: 150px    ;
+    height: 60px;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+    background: #142157; 
+    color: #fbfaf7;
+    cursor: pointer;
+}
+
+.linkdecor{
+    text-decoration: none;
+}
+
+.leemas2:hover{
+    transform: scale(1.1); /* Aumenta el tamaño del botón al 110% */
+    box-shadow: 0px 5px 5px #121D4C;
+}
+
+
+@media (max-width: 1024px) {
+    .appItem {
+        flex-direction: column; /* Cambia a vertical en dispositivos más pequeños */
+        justify-content: center;
+        align-items: center;
+    }
+    .appItem img {
+        max-width: 90%; 
+    }
+    .appItem h3 {
+        max-width: 100%; /* Ajusta elementos para ocupar todo el ancho disponible */
+        flex-direction: column; /* Cambia a vertical en dispositivos más pequeños */
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        box-shadow: 0px 5px 5px black;
+        
+    }
+
+}
+
+@media (max-width: 768px) {
+    .appItem {
+        flex-direction: column;
+    }
+
+    .appItem img {
+        max-width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .appItem {
+        flex-direction: column; /* Cambia a vertical en dispositivos más pequeños */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .appItem img, .appItem h3 {
+        max-width: 100%; /* Ajusta elementos para ocupar todo el ancho disponible */
+    }
+
+    .leemas2 {
+        width: 100%; /* Botón ajusta ancho a todo el contenedor */
+    }
+}
+
+
 .appBody{
-    width: 100%;    
+    width: 100%; 
+    /* margin: auto 0;  */
+    display: flex; /* a partir de aqui, si truena, es culpa de milos */
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .appBody h2{
@@ -11,7 +147,7 @@
 
 .presentacion{
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */;
     align-items: center;
     padding: 3vh;
     font-size: calc(12px + 0.5vw); /* Ajusta dinámicamente el tamaño de la fuente */
@@ -53,7 +189,6 @@
     transform: scale(1.1); /* Aumenta el tamaño del botón al 110% */
     box-shadow: 0px 5px 5px #121D4C;
 }
-
 
 @media (max-width: 768px) {
     .presentacion {

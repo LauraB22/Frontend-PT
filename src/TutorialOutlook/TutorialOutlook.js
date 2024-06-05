@@ -6,6 +6,7 @@ import inicioThunder from "../images/inicioThunder.png"
 import inicioApp from "../images/inicioApp.png" 
 import extencion from "../images/extenciones.png"
 import descargas from "../images/Descargas.png"
+import opciones from "../images/opcionesImport.png"
 import { Link } from "react-router-dom";
 
 
@@ -32,6 +33,11 @@ function TutorialOutlook(){
 
                 <li>En el apartado de extensiones busca "ImportExportTools NG" y habilitala
                     <img src={extencion} className="capturaApp" alt=""/>
+                </li>
+
+                <li>en la esquina superior derecha despliega el menú de la extension y da clic en opciones, ahí habilita la 
+                    casilla de Utilizar la extension 
+                    <img src={opciones} className="capturaApp" alt="" />
                 </li>
 
                 <li>Crea una carpeta donde vengan todos los archivos que quieras analizar. Cuando la tengas, da clic derecho al 

@@ -1,10 +1,10 @@
 .App {
   width: 100%;               /* Ajusta el ancho del div al 100% del contenedor */
-  height: 500px;             /* Altura del div */
   background-image: url('../src/images/personcandado.jpg'); /* Establece la imagen de fondo */
   background-size: cover;    /* Ajusta la imagen para cubrir completamente el div */
   background-position: center; /* Centra la imagen en el div */
   background-repeat: no-repeat; /* Asegura que la imagen no se repita */
+  
 }
 
 .App-logo {
@@ -20,7 +20,6 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
