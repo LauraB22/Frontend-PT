@@ -31,8 +31,9 @@ function Results() {
   return (
     <div className="tablaResponsive">
       <h3>Resultados del Análisis</h3>
-      <h4>Numero de Correos Analizados: {dataJson.TotalEmails}</h4>
-      <h4>Numero de Correos Inválidos: {dataJson.InvalidEmails}</h4>
+      <h4>Numero de Correos recibidos: {dataJson.TotalEmails}</h4>
+      <h4>Numero de Correos analizados: {dataJson.TotalEmails - dataJson.InvalidEmails}</h4>
+      <h4>Numero de Correos inválidos: {dataJson.InvalidEmails}</h4>
       <h4 className="secure">Numero de posibles Correos Seguros: {numValidEmails} -{">"} {percentageValid}%</h4>
       <h4 className="phishing">Numero de posibles Correos Phishing: {numPhishingEmails} -{">"} {percentagePhishing}%</h4>
       <table>
