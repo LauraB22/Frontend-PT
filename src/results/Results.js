@@ -30,7 +30,7 @@ function Results() {
 
   return (
     <div className="tablaResponsive">
-      <h3>Resultados del Análisis</h3>
+      <h1>Resultados del Análisis</h1>
       <h4>Numero de Correos Analizados: {dataJson.TotalEmails}</h4>
       <h4>Numero de Correos Inválidos: {dataJson.InvalidEmails}</h4>
       <h4 className="secure">Numero de Posibles Correos Seguros: {numValidEmails} -{">"} {percentageValid}%</h4>
