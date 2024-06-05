@@ -35,6 +35,7 @@ function Results() {
       <table>
         <thead>
           <tr>
+            <th></th>
             <th>Dirección de correo electrónico del remitente</th>
             <th>Número de URLs en correo</th>
             <th>Número de puntos en URLs</th>
@@ -45,6 +46,7 @@ function Results() {
         <tbody>
           {dataJson.Predictions.map((email, index) => (
           <tr key={index} className={email.Results === 0 ? 'secure' : 'phishing'}>
+            <td>{index+1}</td>
             <td>{email["Sender Address"]}</td>
             <td>{email.NoOfURL}</td>
             <td>{email.NoDotsUrls}</td>
