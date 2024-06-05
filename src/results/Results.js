@@ -26,7 +26,7 @@ function Results() {
   });
 
   const percentageValid = Math.ceil(numValidEmails*100/dataJson.TotalEmails);
-  const percentagePhishing = Math.ceil(numPhishingEmails*100/dataJson.TotalEmails);
+  const percentagePhishing = Math.floor(numPhishingEmails*100/dataJson.TotalEmails);
 
   return (
     <div className="tablaResponsive">
