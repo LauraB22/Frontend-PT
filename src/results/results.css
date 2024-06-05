@@ -7,12 +7,14 @@
 }
 
 h3{
+  font-family: Tahoma; 
   display: flex;
-    justify-content: center;
-    padding-top:40px;
-    color:#15297c
+  justify-content: center;
+  padding-top:40px;
+  color:#15297c
 }
 h4{
+  font-family: Tahoma; 
   text-align: justify;
   font-weight: bold;
   color:#15297c;
@@ -27,6 +29,7 @@ table {
 }
   
 th, td {
+  font-family: Tahoma; 
   padding: 10px;
   text-align: left;
   border-bottom: 1px solid #ddd;

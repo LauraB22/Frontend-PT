@@ -1,14 +1,16 @@
-.tutorial{
-    width: 100%;    
+.tutorialout{
+    width: 100%; 
+    font-family: Tahoma;   
 }
 
-.tutorial h1{
+.tutorialout h1{
+    font-family: Tahoma;
     text-align: center;
     color: #15297c;
 
 }
 
-.tutorial ol{
+.tutorialout ol{
     justify-content: center;
     align-items: center;
     padding: 30px;
@@ -21,13 +23,15 @@
     margin: 0 40px; /* Uso de márgenes laterales consistentes */
 }
 
-.tutorial li{
-    font-size: 22px;
+.tutorialout li{
+    font-family: Tahoma;
+    font-size: 20px;
     text-align: justify;
     padding: 20px;
 }
 
-.tutorial p{
+.tutorialout p{
+    font-family: Tahoma;
     font-size: 22px;
     text-align: justify;
 }
@@ -49,17 +53,7 @@
     border-radius: 15px;     /* Redondea las esquinas de la imagen */
 }
 
-.capturas{
-    max-width: 80%; /* Hacer que el contenedor sea responsivo */
-    height: auto; /* Ajustar altura automáticamente */
-    display: block;
-    margin: 0 auto;
-    padding: 30px;
-    border-radius: 15px;
-}
-
-
-.capturaApp{
+.capturaAppOut{
     max-width: 80%; /* Hacer que el contenedor sea responsivo */
     height: auto; /* Ajustar altura automáticamente */
     display: block;

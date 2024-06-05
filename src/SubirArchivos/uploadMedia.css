@@ -1,4 +1,5 @@
 .uploadMedia{
+  font-family: Tahoma; 
   display: flex;               /* Usamos Flexbox */
   flex-direction: column;
   justify-content: center;     /* Centramos el contenido horizontalmente */
@@ -9,7 +10,7 @@
   margin-bottom: 0;
 }
 
-.uploadMedia h1,h3{
+.uploadMedia h1,h2{
     margin: 0;
     padding-top: 16px;
     padding-bottom: 16px;
@@ -19,15 +20,18 @@
 }
 
 .uploadMedia img{
-    max-width: 50%; /* Asegura que la imagen es responsive */
-    height: 50%; /* Mantiene la proporción de la imagen */
+    max-width: 40%; 
+    height: 40%;
     margin: 0 auto;
     border-radius: 15px; 
     
 }
+.uploadMedia p{
+    font-family: Tahoma; 
+}
 
-
-.buttonexaminar {    
+.buttonexaminar {  
+    font-family: 'Muli', sans-serif;  
     display: block;
     max-width: 150px;
     height: 30px;
@@ -49,7 +53,7 @@
 
 @media (max-width: 768px) {
   .uploadMedia img {
-      max-width: 80%; /* Ajusta el tamaño de la imagen para pantallas más pequeñas */
+      max-width: 50%; /* Ajusta el tamaño de la imagen para pantallas más pequeñas */
   }
 
   .buttonexaminar {

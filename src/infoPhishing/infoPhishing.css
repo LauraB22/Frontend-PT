@@ -1,6 +1,7 @@
 .containerInfo{
     display: flex;               /* Usamos Flexbox */
     flex-direction: column;
+    font-family: Tahoma; 
     justify-content: space-around;     /* Centramos el contenido horizontalmente */
     align-items: center;         /* Centramos el contenido verticalmente */
     height: 100vh;               /* El contenedor principal ocupa toda la altura de la ventana */
@@ -13,7 +14,7 @@
 }
 
 .textoContainer h2{
-    font-size: calc(24px + 1vw); /* Tamaño de fuente adaptable */
+    font-size: calc(20px + 1vw); /* Tamaño de fuente adaptable */
     color: #15297c;
     margin: 40px 0; /* Margin top simplificado y removido el margin bottom específico */
     text-align: center;
@@ -22,7 +23,8 @@
 .textoContainer p{
     text-align: justify;
     margin: 40px 60px; /* Asegúrate de que los márgenes sean responsivos */
-    font-size: calc(16px + 0.5vw); /* Tamaño de fuente adaptable */
+    font-family: Tahoma; 
+    font-size: calc(14px + 0.5vw); /* Tamaño de fuente adaptable */
 }
 
 .containerVideo{

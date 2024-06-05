@@ -1,5 +1,6 @@
 .ConsejosContainer{
-    width: 100%; 
+    width: 100%;
+    font-family: Tahoma; 
         
 }
 
@@ -31,6 +32,7 @@
 
 .ConsejosContainer p{
     font-size: calc(14px + 0.3vw); /* Tamaño de fuente adaptable */
+    font-family: Tahoma; 
     text-align: justify;
     margin: 20px 60px; /* Margen más claro y consistente */
 }

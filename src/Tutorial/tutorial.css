@@ -1,14 +1,15 @@
 .tutorial{
-    width: 100%;    
+    width: 100%;   
 }
 
 .tutorial h1{
     text-align: center;
     color: #15297c;
+    font-family: Tahoma; 
 
 }
 
-.tutorial ol{
+.tutorial ol{ 
     justify-content: center;
     align-items: center;
     padding: 30px;
@@ -22,13 +23,15 @@
 }
 
 .tutorial li{
-    font-size: 22px;
+    font-family: Tahoma;
+    font-size: 20px;
     text-align: justify;
     padding: 20px;
 }
 
 .tutorial p{
-    font-size: 22px;
+    font-family: Tahoma;
+    font-size: 20px;
     text-align: justify;
 }
 .gestor {

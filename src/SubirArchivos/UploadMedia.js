@@ -76,7 +76,7 @@ function UploadMedia() {
       ) : (
        <>
           <h1>¿Tienes sospecha de que el correo electrónico es phishing?</h1>
-          <h3>Sube tus correos a analizar en el formato .mbox</h3>
+          <h2>Sube tus correos a analizar en el formato .mbox</h2>
           <img src={subir} alt="" />
           <input type="file" 
             id="file-input"
