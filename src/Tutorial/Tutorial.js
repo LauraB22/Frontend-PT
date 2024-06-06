@@ -30,8 +30,8 @@ function Tutorial() {
           cualquier dispositivo. Da clic en el icono del gestor del que quieras
           saber como descargar tus correos</p>
           <span className="gestor">
-            <Link to="/TutorialGoogle" className="linkdecor">
-              <span className="contenedorGestor">
+            <Link to="/TutorialGoogle" className="contenedorGestor">
+              <span>
                 <Lottie 
                     options={defaultOptions} 
                     height={200} 
@@ -40,8 +40,8 @@ function Tutorial() {
               </span>
             </Link>
 
-            <Link to="/TutorialOutlook" className="linkdecor">
-              <span className="contenedorGestor">
+            <Link to="/TutorialOutlook" className="contenedorGestor">
+              <span>
                 <Lottie
                   options={defaultOptionsOutlook}
                   height={200}
