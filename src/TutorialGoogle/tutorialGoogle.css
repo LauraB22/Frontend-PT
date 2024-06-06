@@ -1,12 +1,11 @@
 .tutorialGoo{
-    width: 100%; 
-    font-family: Tahoma;   
+    width: 100%;  
 }
 
 .tutorialGoo h1{
-    font-family: Tahoma;
     text-align: center;
     color: #15297c;
+    margin-top: 40px;
 
 }
 
@@ -24,14 +23,12 @@
 }
 
 .tutorialGoo li{
-    font-family: Tahoma;
     font-size: 20px;
     text-align: justify;
     padding: 20px;
 }
 
 .tutorialGoo p{
-    font-family: Tahoma;
     font-size: 22px;
     text-align: justify;
 }

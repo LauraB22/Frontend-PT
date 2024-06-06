@@ -12,7 +12,8 @@
 .formasestafa h4{
     text-align: justify;
     font-weight: bold;
-    color:#15297c
+    color:#15297c;
+    font-size: 20px;
     
 }
 .formasestafa ol{
@@ -28,7 +29,7 @@
 }
 
 .formasestafa p{
-    font-size: calc(14px + 0.4vw); /* Tamaño de fuente adaptable */
+    font-size: calc(16px + 0.4vw); /* Tamaño de fuente adaptable */
     font-family: Tahoma; 
     text-align: justify;
     margin: 20px 80px;

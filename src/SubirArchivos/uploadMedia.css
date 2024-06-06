@@ -1,13 +1,11 @@
 .uploadMedia{
-  font-family: Tahoma; 
   display: flex;               /* Usamos Flexbox */
   flex-direction: column;
   justify-content: center;     /* Centramos el contenido horizontalmente */
   align-items: center;         /* Centramos el contenido verticalmente */
   height: 100vh;               /* El contenedor principal ocupa toda la altura de la ventana */
   text-align: center;  
-  margin-top: 0;
-  margin-bottom: 0;
+ margin: auto;
 }
 
 .uploadMedia h1,h2{
@@ -25,9 +23,6 @@
     margin: 0 auto;
     border-radius: 15px; 
     
-}
-.uploadMedia p{
-    font-family: Tahoma; 
 }
 
 .buttonexaminar {  

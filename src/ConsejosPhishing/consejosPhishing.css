@@ -1,12 +1,11 @@
 .ConsejosContainer{
     width: 100%;
-    font-family: Tahoma; 
-        
 }
 
 .ConsejosContainer h1{
     text-align: center;
-    margin:40px;
+    margin-top:40px;
+    margin-bottom: 40px;
     color:#15297c
 
 }
@@ -14,7 +13,8 @@
 .ConsejosContainer h4{
     text-align: justify;
     font-weight: bold;
-    color:#15297c
+    color:#15297c;
+    font-size: 20px;
     
 }
 
@@ -25,14 +25,13 @@
 }
 
 .ConsejosContainer li{
-    font-size: calc(16px + 0.4vw); /* Tamaño de fuente adaptable */
+    font-size: calc(16px + 0.3vw); /* Tamaño de fuente adaptable */
     text-align: justify;
     margin: 20px;
 }
 
 .ConsejosContainer p{
-    font-size: calc(14px + 0.3vw); /* Tamaño de fuente adaptable */
-    font-family: Tahoma; 
+    font-size: calc(16px + 0.3vw); /* Tamaño de fuente adaptable */
     text-align: justify;
     margin: 20px 60px; /* Margen más claro y consistente */
 }

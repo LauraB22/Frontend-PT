@@ -10,7 +10,7 @@
   font-size: 30px;
   display: flex;
   justify-content: center;
-  padding-top:40px;
+  margin-top:40px;
   color:#15297c
 }
 h4{
@@ -28,8 +28,7 @@ table {
   border-collapse: collapse;
 }
   
-th, td {
-  font-family: Tahoma; 
+th, td { 
   padding: 10px;
   text-align: left;
   border-bottom: 1px solid #15297c;
