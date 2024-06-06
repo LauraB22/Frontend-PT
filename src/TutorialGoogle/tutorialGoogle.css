@@ -1,0 +1,68 @@
+.tutorialGoo{
+    width: 100%; 
+    font-family: Tahoma;   
+}
+
+.tutorialGoo h1{
+    font-family: Tahoma;
+    text-align: center;
+    color: #15297c;
+
+}
+
+.tutorialGoo ol{
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-left: 40px;
+    margin-right: 40px;display: flex; /* Asegurarse de que flex se aplica correctamente */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 0 40px; /* Uso de márgenes laterales consistentes */
+}
+
+.tutorialGoo li{
+    font-family: Tahoma;
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px;
+}
+
+.tutorialGoo p{
+    font-family: Tahoma;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.capturaAppGoo{
+    max-width: 80%; /* Hacer que el contenedor sea responsivo */
+    height: auto; /* Ajustar altura automáticamente */
+    display: block;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+
+@media (max-width: 768px) {
+    
+}
+
+.usaphishmail {
+    display: block;
+    width: 150px;
+    height: 60px;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+    background: #142157;
+    color: #fbfaf7;
+    cursor: pointer;
+    margin-top: 20px;
+}

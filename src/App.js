@@ -7,6 +7,7 @@ import { AppHeader } from "./AppHeader/AppHeader.js";
 import { AppBody } from "./AppBody/AppBody.js";
 import { AppFooter } from "./AppFooter/AppFooter.js";
 import {Tutorial} from "./Tutorial/Tutorial.js";
+import {TutorialGoogle} from "./TutorialGoogle/TutorialGoogle.js";
 import { TutorialOutlook } from "./TutorialOutlook/TutorialOutlook.js";
 import {Results} from "./results/Results.js";
 import { LoadingPage } from "./LoadingPage/LoadingPage.js";
@@ -56,6 +57,12 @@ function App() {
 
           <Route exact path="/tutorial" element={<div>
             <Tutorial/>
+            <AppFooter/>
+          </div>
+          }/>
+
+          <Route exact path="/tutorialGoogle" element={<div>
+            <TutorialGoogle/>
             <AppFooter/>
           </div>
           }/>

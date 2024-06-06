@@ -1,5 +1,8 @@
 .tutorial{
     width: 100%;   
+    display: flex; 
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .tutorial h1{
@@ -9,72 +12,45 @@
 
 }
 
-.tutorial ol{ 
+.tutorial p{
     justify-content: center;
     align-items: center;
     padding: 30px;
     margin-left: 40px;
-    margin-right: 40px;display: flex; /* Asegurarse de que flex se aplica correctamente */
+    margin-right: 40px;
+    display: flex; /* Asegurarse de que flex se aplica correctamente */
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 30px;
-    margin: 0 40px; /* Uso de márgenes laterales consistentes */
-}
-
-.tutorial li{
-    font-family: Tahoma;
-    font-size: 20px;
-    text-align: justify;
-    padding: 20px;
-}
-
-.tutorial p{
+    margin: 0 40px;
     font-family: Tahoma;
     font-size: 20px;
     text-align: justify;
 }
 .gestor {
-    width: 160px;            /* Ancho fijo para los contenedores en pantallas grandes */
+    gap: 20px; /* Espacio entre elementos lottie*/
+    width: 400px;            /* Ancho fijo para los contenedores en pantallas grandes */
     height: 150px;           /* Altura fija */
     display: flex;
-    justify-content: center; /* Centra el contenido (imagen) horizontalmente */
-    align-items: center;     /* Centra el contenido (imagen) verticalmente */
-    margin: 0 auto;          /* Centra `.gestor` en el contenedor padre */
-    padding: 20px;           /* Espacio interno para no tocar los bordes directamente */
+    justify-content: center; 
+    align-items: center;     
+    margin: 0 auto;          
+    padding: 30px;           
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
-.gestor img {
-    max-width: 100%;         /* Asegura que la imagen se ajuste al contenedor `.gestor` */
-    height: auto;            /* Mantiene la proporción de la imagen automáticamente */
-    border-radius: 15px;     /* Redondea las esquinas de la imagen */
-}
-
-.capturas{
-    max-width: 80%; /* Hacer que el contenedor sea responsivo */
-    height: auto; /* Ajustar altura automáticamente */
-    display: block;
-    margin: 0 auto;
-    padding: 30px;
-    border-radius: 15px;
-}
-
-
-.capturaApp{
-    max-width: 80%; /* Hacer que el contenedor sea responsivo */
-    height: auto; /* Ajustar altura automáticamente */
-    display: block;
-    margin: 0 auto;
-    padding: 30px;
-    border-radius: 15px;
+.contenedorGestor{
+    width: auto;
+    text-align: center;
+    font-family: Tahoma;
 }
 
 
 @media (max-width: 768px) {
     .gestor {
-        width: 30%; /* Hace que el `.gestor` se expanda para ocupar el ancho disponible */
+        width: 30%; 
         margin: 10px auto; /* Ajusta el margen para un centrado adecuado */
         padding: 10px; /* Reduce el padding para dispositivos más pequeños */
     }

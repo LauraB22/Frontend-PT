@@ -1,5 +1,5 @@
 .appBody{
-    width: 100%;
+    max-width: 100%;
     /* margin: auto 0;  */
     display: flex; /* a partir de aqui, si truena, es culpa de milos */
     flex-direction: column;
@@ -8,7 +8,7 @@
 
 .appItem{
     max-width: 100%;
-    margin: 3.5vh;
+    margin: auto 0;
     background: #fbfaf7;
     padding: 1vh;
     overflow: hidden;
