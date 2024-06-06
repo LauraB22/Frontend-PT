@@ -4,32 +4,37 @@
   padding: 10px 20px; 
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap; 
+  justify-content: space-around;
   margin-top: auto;
   margin-bottom: 0;
-  /* position: absolute;
-  bottom: 0; */
+  /* position: absolute;*/
+  /* bottom: 0;  */
 
 }
 
 .appfooter img {
   height: 80px; 
-  flex: 0 0 auto;           
+  flex: 0 0 auto;          
 }
 
-.appfooter p {
-  flex-grow: 1; 
-  font-family: Tahoma; 
+.parrafos{
+  display: flex; 
   text-align: center; 
   margin: 0; 
   color: #15297c;
   padding: 0 16px; 
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
+.parrafos p{
+  margin: 10px;
+}
 
-
+/* 
 @media (max-width: 768px) {
   .appfooter {
     flex-direction: column; 
@@ -40,9 +45,10 @@
     margin-bottom: 10px; 
   }
 }
-
-@media (max-width: 480px) {
-  .appfooter img {
-    height: 60px; 
+*/ 
+@media screen and (min-width: 1020px) {
+  .appfooter {
+    flex-wrap: nowrap;
+  
   }
-}
+} 

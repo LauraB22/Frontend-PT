@@ -1,6 +1,5 @@
 .formasestafa{
-    width: 100%; 
-    font-family: Tahoma;     
+    width: 100%;     
 }
 
 .formasestafa h1{
@@ -53,3 +52,34 @@
     box-sizing: border-box;
 }
 
+.ejemplos4 {
+    width: 60%; 
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 768px) {
+    .formasestafa h1, .formasestafa h4, .formasestafa p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .formasestafa li, .formasestafa p {
+        font-size: calc(14px + 0.5vw); /* Ajustar el tamaño de la fuente para pantallas más pequeñas */
+    }
+
+    .ejemplos4{
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .formasestafa ol, .formasestafa li, .formasestafa p {
+        margin: 10px;
+    }
+
+}

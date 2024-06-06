@@ -8,8 +8,6 @@
 .tutorial h1{
     text-align: center;
     color: #15297c;
-    font-family: Tahoma; 
-
 }
 
 .tutorial p{
@@ -42,9 +40,9 @@
 }
 
 .contenedorGestor{
+    display: inline;
     width: auto;
     text-align: center;
-    font-family: Tahoma;
 }
 
 
@@ -54,23 +52,6 @@
         margin: 10px auto; /* Ajusta el margen para un centrado adecuado */
         padding: 10px; /* Reduce el padding para dispositivos más pequeños */
     }
-}
-
-.usaphishmail {
-    display: block;
-    width: 150px;
-    height: 60px;
-    font-family: 'Muli', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0 auto;
-    padding: 8px;
-    border: none;
-    border-radius: 15px;
-    background: #142157;
-    color: #fbfaf7;
-    cursor: pointer;
-    margin-top: 20px;
 }
 
 @media (max-width: 480px) {

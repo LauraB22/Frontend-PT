@@ -53,7 +53,7 @@ function FormasEstafa(){
                     <p>Este tipo implica la creación de sitios web, correos electrónicos o páginas de redes sociales que
                          imitan las de marcas conocidas. Los delincuentes utilizan estos sitios para engañar a las personas
                           para que proporcionen datos confidenciales.</p>
-                    <img src={phishingMarca} className="ejemplos3" alt=""/>
+                    <img src={phishingMarca} className="ejemplos4" alt=""/>
                 </li>
             </ol>
         </div>

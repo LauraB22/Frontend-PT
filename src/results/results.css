@@ -6,15 +6,15 @@
   min-height: 100vh;
 }
 
-h3{
-  font-family: Tahoma; 
+.h3{
+  font-size: 30px;
   display: flex;
   justify-content: center;
   padding-top:40px;
   color:#15297c
 }
 h4{
-  font-family: Tahoma; 
+  font-size: 18px;
   text-align: justify;
   font-weight: bold;
   color:#15297c;
@@ -32,11 +32,12 @@ th, td {
   font-family: Tahoma; 
   padding: 10px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #15297c;
 }
 
 th {
-  background-color: #f4f4f4;
+  background-color: #15297c;
+  color: #f9f9f9;
 }
 
 tbody tr:nth-child(odd) {

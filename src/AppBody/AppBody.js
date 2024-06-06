@@ -7,6 +7,7 @@ import React from "react";
 
 function AppBody() {
   return (
+    
     <div className="appBody">
 
     <div className="appItem">
@@ -54,6 +55,10 @@ function AppBody() {
         </button>
       </Link>
       </span>
+
+      {/* <p className="slogan">
+        Mantén tu correo seguro: detecta el phishing antes de que te atrape
+      </p> */}
       
     </div>
   );
