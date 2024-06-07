@@ -14,6 +14,7 @@ import { LoadingPage } from "./LoadingPage/LoadingPage.js";
 import {InfoPhishing} from "./infoPhishing/InfoPhishing.js";
 import {FormasEstafa} from "./FormasEstafa/FormasEstafa.js";
 import { ConsejosPhishing } from "./ConsejosPhishing/ConsejosPhishing.js";
+import { Error } from "./Error/Error.js";
 import {
   BrowserRouter as Router,
   Routes,
@@ -38,7 +39,7 @@ function App() {
           </div>}
           />
 
-          <Route exact path="/results" element={<div>
+          <Route exact path="/Results" element={<div>
             <Results/>
             <AppFooter/>  
           </div>}
@@ -88,6 +89,11 @@ function App() {
           <Route exact path="/ConsejosPhishing" element={<div>
             <ConsejosPhishing/>
             <AppFooter/>
+          </div>
+          }/>
+
+          <Route exact path="/Error" element={<div>
+            <Error/>
           </div>
           }/>
         </Routes> 

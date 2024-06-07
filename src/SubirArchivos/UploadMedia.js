@@ -2,7 +2,8 @@ import subir from "../images/subir.png";
 import './uploadMedia.css'
 import { LoadingPage } from "../LoadingPage/LoadingPage.js";
 import React, { useState, useEffect } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useHistory } from 'react-router-dom';
+import { toBeEmpty } from "@testing-library/jest-dom/dist/matchers.js";
 
 function UploadMedia() {
   const [data, setData] = useState("");
@@ -11,6 +12,7 @@ function UploadMedia() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
+  //const history = useHistory();
 
   useEffect(() => {
     if (file !== null) {
@@ -42,9 +44,13 @@ function UploadMedia() {
          }
        );
 
+       if (response.status !== 200) {
+        throw new Error('Failed to fetch data');
+       }
+
        const result = await response.text();
        setData(result);
-       navigate('/results', {state: {data:result}}); //aqui se navega a la otra pagina donde muestra los resultados
+       navigate('/Results', {state: {data:result}}); //aqui se navega a la otra pagina donde muestra los resultados
        //el state:{data:result} es para poder pasar datos entre componentes a traves de las rutas  
        // la función navigate permite pasar un objeto state como parte de su segundo argumento. 
        //Este objeto state es accesible en el componente de destino a través del hook useLocation. 
@@ -52,8 +58,10 @@ function UploadMedia() {
      } catch (error) {
         setError("Error fetching data: " + error.message);
         console.error("Error fetching data:", error);
-        setIsLoading(false); 
-     }
+        navigate('/Error', { state: {error: error.message}});
+     }finally {
+      setIsLoading(false); // Finalizar el estado de carga
+  }
    };
 
    const handleDragOver = (event) => {
