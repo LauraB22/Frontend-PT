@@ -16,7 +16,7 @@ function TutorialGoogle() {
       <h1> ¿Cómo utilizo phishmail en Google? </h1>
       <ol>
         <li>
-          Selecciona los correos que quieras descargar y envialos a una carpeta
+          Selecciona los correos que quieras descargar y envíalos a una carpeta
           nueva
           <img src={ejemplo} className="capturaAppGoo" alt=" " />
         </li>
@@ -25,7 +25,7 @@ function TutorialGoogle() {
           Cuando termines de seleccionar los correos, ve a tu perfil de Google y
           da clic en Gestionar tu cuenta
           <img src={cuenta} className="capturaAppGoo" alt=" " />
-          Aparecerá el apartado de "Privacidad y personalización", despues de
+          Aparecerá el apartado de "Privacidad y personalización", después de
           darle clic a ese apartado, desplaza la página hasta encontrar
           "Descargar o eliminar tus datos" y da clic a descargar tus datos como
           lo muestra la imagen

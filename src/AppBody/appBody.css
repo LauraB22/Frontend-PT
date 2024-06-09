@@ -156,7 +156,7 @@
         flex-direction: column; /* Cambia a vertical en dispositivos más pequeños */
         justify-content: center;
         align-items: center;
-        margin: auto;
+        margin: 10px;
     }
     .appItem img {
         max-width: 70%; 

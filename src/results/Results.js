@@ -25,16 +25,16 @@ function Results() {
     }
   });
 
-  const percentageValid = Math.ceil(numValidEmails*100/dataJson.TotalEmails);
-  const percentagePhishing = Math.floor(numPhishingEmails*100/dataJson.TotalEmails);
+  const percentageValid = parseFloat((numValidEmails*100/dataJson.TotalEmails).toFixed(3));
+  const percentagePhishing = parseFloat((numPhishingEmails*100/dataJson.TotalEmails).toFixed(3));
 
   return (
     <div className="tablaResponsive">
       <h3 className="h3">Resultados del Análisis</h3>
-      <h4>Numero de Correos Analizados: {dataJson.TotalEmails}</h4>
-      <h4>Numero de Correos Inválidos: {dataJson.InvalidEmails}</h4>
-      <h4 className="secure">Numero de Posibles Correos Seguros: {numValidEmails} -{">"} {percentageValid}%</h4>
-      <h4 className="phishing">Numero de Posibles Correos Phishing: {numPhishingEmails} -{">"} {percentagePhishing}%</h4>
+      <h4>Número de Correos Analizados: {dataJson.TotalEmails}</h4>
+      <h4>Número de Correos Inválidos: {dataJson.InvalidEmails}</h4>
+      <h4 className="secure">Número de Posibles Correos Seguros: {numValidEmails} -{">"} {percentageValid}%</h4>
+      <h4 className="phishing">Número de Posibles Correos Phishing: {numPhishingEmails} -{">"} {percentagePhishing}%</h4>
       <table>
         <thead>
           <tr>

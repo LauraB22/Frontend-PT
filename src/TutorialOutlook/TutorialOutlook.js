@@ -15,19 +15,19 @@ function TutorialOutlook(){
         <div className="tutorialout">
             <h1> ¿Cómo utilizo phishmail en Outlook? </h1>
             <ol>
-                <li>En el navegador de tu preferencia, busca "Thunderbird" y descargalo para tu sistema operativo
+                <li>En el navegador de tu preferencia, busca "Thunderbird" y descárgalo para tu sistema operativo
                     <img src={capThunderbird} className="capturaAppOut" alt="" />
                 </li>
 
-                <li>Espera a que se descargue e instalalo. Elige la instalación estándar y da siguiente
+                <li>Espera a que se descargue e instálalo. Elige la instalación estándar y da siguiente
                     <img src={instalacion1} className="capturaAppOut" alt="" />
                 </li>
 
-                <li>Cuando termine de instalarse, ejecutalo e introduce tu nombre, correo electronico y contraseña
+                <li>Cuando termine de instalarse, ejecútalo e introduce tu nombre, correo electronico y contraseña
                     <img src={inicioThunder} className="capturaAppOut" alt=""/>
                 </li>
 
-                <li>Da clic en las tres lineas ubicadas en la esquina superior derecha, ahi da clic a complementos y temas
+                <li>Da clic en las tres lí  neas ubicadas en la esquina superior derecha, ahi da clic a complementos y temas
                     <img src={inicioApp} className="capturaAppOut" alt=""/>
                 </li>
 
@@ -35,13 +35,13 @@ function TutorialOutlook(){
                     <img src={extencion} className="capturaAppOut" alt=""/>
                 </li>
 
-                <li>en la esquina superior derecha despliega el menú de la extension y da clic en opciones, ahí habilita la 
+                <li>En la esquina superior derecha despliega el menú de la extensión y da clic en opciones, ahí habilita la 
                     casilla de Utilizar la extension 
                     <img src={opciones} className="capturaAppOut" alt="" />
                 </li>
 
                 <li>Crea una carpeta donde vengan todos los archivos que quieras analizar. Cuando la tengas, da clic derecho al 
-                    nombre de esa carpeta y descargalo en formato .mbox en la carpeta que desees.
+                    nombre de esa carpeta y descárgalo en formato .mbox en la carpeta que desees.
                     <img src={descargas} className="capturaAppOut" alt=""/>
                 </li>
 

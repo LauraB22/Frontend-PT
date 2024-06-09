@@ -1,6 +1,6 @@
 .header {
     background-color: #142157;
-    width: 100%;
+    width: auto;
     height: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
