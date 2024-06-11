@@ -15,6 +15,7 @@ import {InfoPhishing} from "./infoPhishing/InfoPhishing.js";
 import {FormasEstafa} from "./FormasEstafa/FormasEstafa.js";
 import { ConsejosPhishing } from "./ConsejosPhishing/ConsejosPhishing.js";
 import { Error } from "./Error/Error.js";
+import { Error404 } from "./Error404/Error404.js";
 import {
   BrowserRouter as Router,
   Routes,
@@ -96,6 +97,11 @@ function App() {
             <Error/>
           </div>
           }/>
+
+          <Route path="*" element={<div>
+            <Error404/>
+          </div>}/>
+
         </Routes> 
       </>
     </Router>
