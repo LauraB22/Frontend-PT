@@ -1,3 +1,24 @@
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
+header img.logo {
+    margin-left: 1vw; /* Espacio a la izquierda en unidades relativas */
+    margin-right: 1vw; /* Espacio a la derecha en unidades relativas */
+    padding: 0; /* O cualquier padding que necesites */
+    width: 40px; /* Ajusta el tamaño del icono según sea necesario */
+    height: auto; /* Mantiene la proporción del icono */
+}
+
+
 .header {
     background-color: #142157;
     width: auto;
@@ -13,8 +34,7 @@
         -ms-flex-align: center;
             align-items: center;
             
-
-  }
+}
 
   .logo{
     width: 40px; /* Ajusta el tamaño según necesites */
