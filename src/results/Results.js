@@ -35,30 +35,32 @@ function Results() {
       <h4>Número de Correos Inválidos: {dataJson.InvalidEmails}</h4>
       <h4 className="secure">Número de Posibles Correos Seguros: {numValidEmails} -{">"} {percentageValid}%</h4>
       <h4 className="phishing">Número de Posibles Correos Phishing: {numPhishingEmails} -{">"} {percentagePhishing}%</h4>
-      <table>
-        <thead>
-          <tr>
-            <th></th>
-            <th>Dirección de correo electrónico del remitente</th>
-            <th>Número de URLs en correo</th>
-            <th>Número de puntos en URLs</th>
-            <th>Número de carácteres especiales en URLs</th>
-            <th>Resultado</th>
-          </tr>
-        </thead>
-        <tbody>
-          {dataJson.Predictions.map((email, index) => (
-          <tr key={index} className={email.Results === 0 ? 'secure' : 'phishing'}>
-            <td>{index+1}</td>
-            <td>{email["Sender Address"]}</td>
-            <td>{email.NoOfURL}</td>
-            <td>{email.NoDotsUrls}</td>
-            <td>{email.NoSpecialChar}</td>
-            <td>{email.Results === 0 ? 'Correo seguro' : 'Posible phishing'}</td>
-          </tr>
-        ))}
-        </tbody>
-      </table>
+      <div className="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Dirección de correo electrónico del remitente</th>
+              <th>Número de URLs en correo</th>
+              <th>Número de puntos en URLs</th>
+              <th>Número de carácteres especiales en URLs</th>
+              <th>Resultado</th>
+            </tr>
+          </thead>
+          <tbody>
+            {dataJson.Predictions.map((email, index) => (
+            <tr key={index} className={email.Results === 0 ? 'secure' : 'phishing'}>
+              <td>{index+1}</td>
+              <td>{email["Sender Address"]}</td>
+              <td>{email.NoOfURL}</td>
+              <td>{email.NoDotsUrls}</td>
+              <td>{email.NoSpecialChar}</td>
+              <td>{email.Results === 0 ? 'Correo seguro' : 'Posible phishing'}</td>
+            </tr>
+          ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }

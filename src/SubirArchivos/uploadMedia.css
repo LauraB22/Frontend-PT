@@ -29,7 +29,7 @@
     font-family: 'Muli', sans-serif;  
     display: block;
     max-width: 150px;
-    height: 30px;
+    height: 50px;
     font-size: calc(12px + 0.5vw); /* Ajusta el tamaño de fuente responsivamente */
     margin: 20px auto; /* Centra el botón horizontalmente */
     padding: 10px;
@@ -48,10 +48,20 @@
 
 @media (max-width: 768px) {
   .uploadMedia img {
-      max-width: 50%; /* Ajusta el tamaño de la imagen para pantallas más pequeñas */
+      max-width: 50%; 
   }
 
   .buttonexaminar {
-      font-size: calc(10px + 2vw); /* Incrementa el tamaño de fuente en pantallas pequeñas */
+      font-size: 16px; /* Incrementa el tamaño de fuente en pantallas pequeñas */
   }
+}
+
+@media (min-with:480px) {
+
+    .uploadMedia img{
+        max-width: 50%;
+    }
+    .buttonexaminar {
+        font-size: calc(8px + 2vw); /* Incrementa el tamaño de fuente en pantallas pequeñas */
+    }
 }
