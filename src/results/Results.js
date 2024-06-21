@@ -1,5 +1,6 @@
 import React from "react";
 import "./results.css";
+import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 function Results() {
@@ -60,7 +61,14 @@ function Results() {
           ))}
           </tbody>
         </table>
+        
       </div>
+      <div className="tablas">
+      <Link to="/UploadMedia" className="linkdecor1">
+            <button className="buttonRegresa">Sube más archivos</button>
+      </Link>
+      </div>
+      
     </div>
   );
 }

@@ -62,6 +62,36 @@ tbody tr:nth-child(odd) {
   font-weight: bolder;
 }
 
+.linkdecor1{
+  text-decoration: none;
+  margin: 20px;
+}
+
+.buttonRegresa{
+  display: block;
+  width: 150px;
+  height: 60px;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 8px;
+  border: none;
+  border-radius: 15px;
+  background: #15297c;
+  color: #fbfaf7;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.buttonRegresa:hover{
+  transform: scale(1.1); /* Aumenta el tamaño del botón al 110% */
+  box-shadow: 0px 5px 5px #121D4C;
+}
+
+
+
 /* Media Queries para responsividad */
 @media (max-width: 768px) {
 
