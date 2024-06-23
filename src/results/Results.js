@@ -37,7 +37,7 @@ function Results() {
       <h4 className="secure">Número de Posibles Correos Seguros: {numValidEmails}</h4>
       <h4 className="secure">Porcentaje de Posibles Correos Seguros: {percentageValid}%</h4>
       <h4 className="phishing">Número de Posibles Correos Phishing: {numPhishingEmails}</h4>
-      <h4 className="secure">Número de Posibles Correos Phishing: {percentagePhishing}%</h4>
+      <h4 className="phishing">Porcentaje de Posibles Correos Phishing: {percentagePhishing}%</h4>
 
       <div className="table-wrap">
         <table>
