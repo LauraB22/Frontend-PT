@@ -8,10 +8,6 @@ import MetricsComponent from './MetricsComponent';
 function Results() {
   const location = useLocation();
   const data = location.state?.data;
-  let numValidEmails = 0;
-  let numPhishingEmails = 0;
-  console.log("Datos recibidos en Results:", data);
-  console.log("Tipos de datos ", typeof(data));
 
   let dataJson;
   try {
