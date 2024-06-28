@@ -57,6 +57,6 @@
   
   /* Estilo para la tabla de correos */
   .email-row:hover {
-    background-color: #f1f1f1;
+    background-color: #1d22a484;
     cursor: pointer;
   }
