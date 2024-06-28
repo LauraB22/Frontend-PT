@@ -6,12 +6,12 @@ const EmailRow = ({ index, email }) => {
 
   return (
     <>
-      <tr className="email-row" onClick={() => setShowFeatures(!showFeatures)}>
+      <tr className={email.Results === 0 ? 'email-row secure' : 'email-row phishing'} onClick={() => setShowFeatures(!showFeatures)}>
         <td>{index}</td>
         <td>{email.SenderAddress}</td>
         <td>{email["Non-PhishingPureLeaves"]}</td>
         <td>{email["PhishingPureLeaves"]}</td>
-        <td>{email.Results}</td>
+        <td>{email.Results === 0 ? 'Correo seguro' : 'Posible phishing'}</td>
       </tr>
       {showFeatures && (
         <tr>
