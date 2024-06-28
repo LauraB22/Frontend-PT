@@ -54,3 +54,9 @@
     font-size: 16px;
     margin-left: 20px; /* Añadir margen a la izquierda para separar del borde */
   }
+  
+  /* Estilo para la tabla de correos */
+  .email-row:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
