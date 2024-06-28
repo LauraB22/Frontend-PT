@@ -20,30 +20,11 @@ function Results() {
     console.error("Error parsing data");
   }
 
-  dataJson.Predictions.map((email) => {
-    if (email.Results === 0) {
-      numValidEmails++;
-    }else{
-      numPhishingEmails++;
-    }
-  });
-
-  const percentageValid = parseFloat((numValidEmails*100/dataJson.TotalEmails).toFixed(3));
-  const percentagePhishing = parseFloat((numPhishingEmails*100/dataJson.TotalEmails).toFixed(3));
-
   return (
     <div className="tablaResponsive">
-      {/* <h3 className="h3">Resultados del Análisis</h3>
-      <h4>Número de Correos Analizados: {dataJson.TotalEmails}</h4>
-      <h4>Número de Correos Inválidos: {dataJson.InvalidEmails}</h4>
-      <h4 className="secure">Número de Posibles Correos Seguros: {numValidEmails}</h4>
-      <h4 className="secure">Porcentaje de Posibles Correos Seguros: {percentageValid}%</h4>
-      <h4 className="phishing">Número de Posibles Correos Phishing: {numPhishingEmails}</h4>
-      <h4 className="phishing">Porcentaje de Posibles Correos Phishing: {percentagePhishing}%</h4> */}
       <div>
         <MetricsComponent dataJson={dataJson} />
       </div>
-
       <div className="table-wrap">
         {/* <table>
           <thead>
