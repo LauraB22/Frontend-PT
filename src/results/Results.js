@@ -2,6 +2,8 @@ import React from "react";
 import "./results.css";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import EmailTable from './EmailTable';
+import MetricsComponent from './MetricsComponent';
 
 function Results() {
   const location = useLocation();
@@ -31,16 +33,19 @@ function Results() {
 
   return (
     <div className="tablaResponsive">
-      <h3 className="h3">Resultados del Análisis</h3>
+      {/* <h3 className="h3">Resultados del Análisis</h3>
       <h4>Número de Correos Analizados: {dataJson.TotalEmails}</h4>
       <h4>Número de Correos Inválidos: {dataJson.InvalidEmails}</h4>
       <h4 className="secure">Número de Posibles Correos Seguros: {numValidEmails}</h4>
       <h4 className="secure">Porcentaje de Posibles Correos Seguros: {percentageValid}%</h4>
       <h4 className="phishing">Número de Posibles Correos Phishing: {numPhishingEmails}</h4>
-      <h4 className="phishing">Porcentaje de Posibles Correos Phishing: {percentagePhishing}%</h4>
+      <h4 className="phishing">Porcentaje de Posibles Correos Phishing: {percentagePhishing}%</h4> */}
+      <div>
+        <MetricsComponent dataJson={dataJson} />
+      </div>
 
       <div className="table-wrap">
-        <table>
+        {/* <table>
           <thead>
             <tr>
               <th></th>
@@ -63,7 +68,10 @@ function Results() {
             </tr>
           ))}
           </tbody>
-        </table>
+        </table> */}
+        <div>
+            <EmailTable data={dataJson} />
+        </div>
         
       </div>
       <div className="tablas">

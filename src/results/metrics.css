@@ -1,0 +1,56 @@
+.result-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Para centrar el contenido y limitar el ancho */
+  }
+  
+  .result-card h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 24px;
+    text-align: center; /* Centrar el título */
+  }
+  
+  .result-card h4 {
+    margin: 10px 0;
+    color: #555;
+    font-size: 18px;
+  }
+  
+  .result-card .section-title {
+    color: #222;
+    font-size: 20px;
+    margin: 20px 0 10px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    text-align: center; /* Centrar el título de la sección */
+  }
+  
+  .result-card .stat {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+    padding: 10px;
+  }
+  
+  .result-card .secure {
+    color: #4CAF50;
+  }
+  
+  .result-card .phishing {
+    color: #F44336;
+  }
+  
+  .result-card .stat-label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .result-card .stat-value {
+    font-size: 16px;
+    margin-left: 20px; /* Añadir margen a la izquierda para separar del borde */
+  }
