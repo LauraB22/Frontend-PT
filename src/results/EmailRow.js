@@ -11,7 +11,7 @@ const EmailRow = ({ index, email }) => {
         <td>{email.SenderAddress}</td>
         <td>{email["Non-PhishingPureLeaves"]}</td>
         <td>{email["PhishingPureLeaves"]}</td>
-        <td>{email.Results === 0 ? 'Correo seguro' : 'Posible phishing'}</td>
+        <td>{email.Results === 0 ? 'Posible correo seguro' : 'Posible phishing'}</td>
       </tr>
       {showFeatures && (
         <tr>
